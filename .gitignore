@@ -1,0 +1,6 @@
+*.wav
+.DS_Store
+Thumbs.db
+_notes/
+*.LCK
+*.psd
