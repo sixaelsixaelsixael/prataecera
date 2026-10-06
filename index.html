@@ -15,24 +15,28 @@
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Apply saved theme/language before first paint (prevents a flash) -->
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("lang")}catch(e){}d.dataset.theme=t||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");if(l==="pt"){d.dataset.lang="pt";d.lang="pt-BR"}})()</script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20edulis%20sims.webp" />
   </head>
 
   <body>
+    <script src="js/site.js"></script>
     <main class="portal-container">
       
       <!-- Top Header Banner -->
       <header class="portal-header">
         <a href="sitemap.html">
-          <img src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/prataeceramamangavabmct2.webp" alt="Prata + Cera Header Label" width="720" height="400" fetchpriority="high" decoding="async" />
+          <img src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/prataeceramamangavabmct2.webp" alt="Prata + Cera Header Label" data-i18n-alt="a_header" width="720" height="400" fetchpriority="high" decoding="async" />
         </a>
       </header>
 
       <!-- Center Music Heart Element -->
       <div class="image-box">
         <a href="sonoro/landing.html">
-          <img src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/musicheartportal.webp" alt="Prata + Cera Content Label" width="900" height="1200" decoding="async" />
+          <img class="inv" src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/musicheartportal.webp" alt="Prata + Cera Content Label" data-i18n-alt="a_content" width="900" height="1200" decoding="async" />
         </a>
       </div>
 
@@ -40,7 +44,7 @@
 
     <!-- Global Footer -->
     <footer class="custom-footer">
-      <p class="footer-meta">~ Last updated 03.10.2026 ~</p>
+      <p class="footer-meta">~ <span data-i18n="upd">Last updated</span> 03.10.2026 ~</p>
       <p class="footer-brand">𝄞⨾ Prata+Cera… 978..★⋆𝄞⋆♡☆*:·ﾟ</p>
     </footer>
   </body>

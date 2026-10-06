@@ -14,11 +14,15 @@
     <!-- External Consolidated Stylesheet -->
     <link rel="stylesheet" href="../css/style.css" />
 
+    <!-- Apply saved theme/language before first paint (prevents a flash) -->
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("lang")}catch(e){}d.dataset.theme=t||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");if(l==="pt"){d.dataset.lang="pt";d.lang="pt-BR"}})()</script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20edulis%20sims.webp" />
   </head>
 
   <body>
+    <script src="../js/site.js"></script>
 
     <main class="portal-container">
 
@@ -27,13 +31,13 @@
         
         <header class="card-header">
           <a href="../index.html" title="home//casa">
-            <img src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20alata%20curtis.webp" alt="Prata + Cera Main Portal Label" fetchpriority="high" decoding="async" />
+            <img src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20alata%20curtis.webp" alt="Prata + Cera Main Portal Label" data-i18n-alt="a_portal" fetchpriority="high" decoding="async" />
           </a>
         </header>
 
         <ul class="card-links">
           <li class="card-link-item">
-            <a href="https://thankyoucharlie.bandcamp.com/album/porch-2022-2024" target="_blank" rel="noopener noreferrer">
+            <a href="https://thankyoucharlie.bandcamp.com/album/porch-2022-2024" target="_blank" rel="noopener noreferrer" data-i18n="px_listen">
               [★] LISTEN / BANDCAMP
             </a>
           </li>
@@ -43,19 +47,19 @@
             </a>
           </li>
           <li class="card-link-item">
-            <a href="aovivo.html">
+            <a href="aovivo.html" data-i18n="px_live">
               [★] LIVE PERFORMANCE LOG
             </a>
           </li>
           <li class="card-link-item">
-            <a href="xxx" target="_blank" rel="noopener noreferrer">
+            <a href="xxx" target="_blank" rel="noopener noreferrer" data-i18n="px_gear">
               [★] GEAR &amp; HARDWARE WIKI
             </a>
           </li>
         </ul>
 
         <footer class="card-nav">
-          <a href="../sitemap.html">
+          <a href="../sitemap.html" data-i18n="px_back">
             [↩] RETURN TO SITEMAP
           </a>
         </footer>
@@ -66,7 +70,7 @@
 
     <!-- Global Footer -->
     <footer class="custom-footer">
-      <p class="footer-meta">~ Last updated 02.10.2026 ~</p>
+      <p class="footer-meta">~ <span data-i18n="upd">Last updated</span> 02.10.2026 ~</p>
       <p class="footer-brand">𝄞⨾ Prata+Cera… 978..★⋆𝄞⋆♡☆*:·ﾟ</p>
     </footer>
 
