@@ -1,0 +1,32 @@
+name: Deploy to Neocities
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect site files
+        run: |
+          mkdir -p dist/css dist/js
+          cp index.html sitemap.html wiki.html dist/
+          cp css/style.css dist/css/
+          cp js/site.js js/lang-pt.js dist/js/
+          cp -r sonoro dist/
+
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v2
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          dist_dir: dist
+          cleanup: false
