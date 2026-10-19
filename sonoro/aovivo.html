@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Apply saved theme/language before first paint (prevents a flash) -->
-    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("lang")}catch(e){}d.dataset.theme=t||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light");if(l==="pt"){d.dataset.lang="pt";d.lang="pt-BR"}})()</script>
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("lang")}catch(e){}d.dataset.theme=t==="dark"?"dark":"light";if(l==="pt"){d.dataset.lang="pt";d.lang="pt-BR"}})()</script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20edulis%20sims.webp" />
@@ -27,7 +27,7 @@
       
       <!-- Top Banner Node -->
       <header class="portal-header">
-        <a href="pixote.html" title="pixote🐾">
+        <a href="pixote.html" title="pixote🐾" data-mask="notes">
           <img class="inv" src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/music%20note%20shadow%20comp.webp" alt="Prata + Cera Music Note Label" data-i18n-alt="a_note" fetchpriority="high" decoding="async" />
         </a>
       </header>
@@ -36,6 +36,7 @@
       <section class="log-card">
         <div class="log-header">
           <h2 data-i18n="av_h2">★ [LOG] / AO_VIVO_SHOW_PERFORMANCES</h2>
+          <span class="meta-format" data-i18n="fmt">[DD.MM.YYYY]</span>
         </div>
 
         <!-- Entry 3 -->
@@ -52,11 +53,11 @@
           <div class="show-audio-player">
             <audio controls preload="none">
               <source src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2026/pixote_aovivo_firehouse20022026.wav" type="audio/wav" />
-              Your browser does not support the audio element.
+              Your browser does not support the audio element :(
             </audio>
           </div>
           <div class="show-download-link">
-            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2026/pixote_aovivo_firehouse20022026.wav" download target="_blank" rel="noopener noreferrer">
+            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2026/pixote_aovivo_firehouse20022026.wav" download target="_blank" rel="noopener noreferrer" title="download">
               [↓] WAV
             </a>
           </div>
@@ -71,11 +72,11 @@
           <div class="show-audio-player">
             <audio controls preload="none">
               <source src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__DoD_ZUZU__08102025.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
+              Your browser does not support the audio element :(
             </audio>
           </div>
           <div class="show-download-link">
-            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__DoD_ZUZU__08102025.mp3" download target="_blank" rel="noopener noreferrer">
+            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__DoD_ZUZU__08102025.mp3" download target="_blank" rel="noopener noreferrer" title="download">
               [↓] MP3
             </a>
           </div>
@@ -90,11 +91,11 @@
           <div class="show-audio-player">
             <audio controls preload="none">
               <source src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__rabbithole__06092025.mp3" type="audio/mpeg" />
-              Your browser does not support the audio element.
+              Your browser does not support the audio element :(
             </audio>
           </div>
           <div class="show-download-link">
-            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__rabbithole__06092025.mp3" download target="_blank" rel="noopener noreferrer">
+            <a href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/pixote/2025/PIXOTE__AO_VIVO__rabbithole__06092025.mp3" download target="_blank" rel="noopener noreferrer" title="download">
               [↓] MP3
             </a>
           </div>
@@ -102,8 +103,8 @@
 
         <!-- Navigation Footnote -->
         <div class="log-meta">
-          <span><a href="pixote.html" data-i18n="av_back1">↩ Return to PIXOTE</a></span>
-          <span><a href="../sitemap.html" data-i18n="av_back2">↩ Return to SITEMAP</a></span>
+          <span><a href="pixote.html" data-i18n="av_back1">↩ PIXOTE</a></span>
+          <span><a href="../sitemap.html" data-i18n="av_back2">↪ SITEMAP</a></span>
         </div>
       </section>
 
@@ -111,7 +112,7 @@
 
     <!-- Global Footer -->
     <footer class="custom-footer">
-      <p class="footer-meta">~ <span data-i18n="upd">Last updated</span> 05.10.2026 ~</p>
+      <p class="footer-meta">~ <span data-i18n="upd">Last updated</span> 07.10.2026 ~</p>
       <p class="footer-brand">𝄞⨾ Prata+Cera… 978..★⋆𝄞⋆♡☆*:·ﾟ</p>
     </footer>
 

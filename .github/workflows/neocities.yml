@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+# Needed so the build step can commit the rebuilt log back to main.
+permissions:
+  contents: write
+
 concurrency:
   group: deploy-to-neocities
   cancel-in-progress: true
@@ -16,13 +20,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Rebuilds the log from log-entries/. Does nothing (and writes nothing)
+      # when the entries have not changed, so ordinary page edits are untouched.
+      - name: Build log from log-entries/
+        run: python3 scripts/build_log.py
+
+      # Push the rebuilt files back to main so the repo and GitHub Pages match.
+      # Commits made with GITHUB_TOKEN do not start another workflow run, which is
+      # why the deploy below happens in this same run.
+      - name: Commit rebuilt files
+        run: |
+          git add -A -- '*.html' js/lang-pt.js
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Rebuild log from log-entries [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
       - name: Collect site files
         run: |
           mkdir -p dist/css dist/js
           cp index.html sitemap.html wiki.html dist/
           cp css/style.css dist/css/
-          cp js/site.js js/lang-pt.js dist/js/
+          cp js/site.js js/hit.js js/lang-pt.js dist/js/
           cp -r sonoro dist/
+          cp -r masks dist/
+          if [ -f robots.txt ]; then cp robots.txt dist/; fi
 
       - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v2

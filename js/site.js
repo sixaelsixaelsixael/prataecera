@@ -7,6 +7,10 @@
     set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
   };
   var lang = store.get('lang') === 'pt' ? 'pt' : 'en';
+
+  /* FLAG BUTTONS (optional): when your flag images are ready, put the full address of each one
+     between the quotes. Leave both empty to keep the text EN / PT. */
+  var FLAGS = { en: '', pt: '' };
   var TXT = {
     en: { dark: 'Switch to dark mode', light: 'Switch to light mode', lang: 'Switch to Portuguese (Brazil)' },
     pt: { dark: 'Mudar para o modo escuro', light: 'Mudar para o modo claro', lang: 'Mudar para ingl\u00eas' }
@@ -25,12 +29,19 @@
   nav.appendChild(th); nav.appendChild(lg);
   d.body.insertBefore(nav, d.body.firstChild);
 
+  function flag(code) {
+    var f = FLAGS[code];
+    return '<span' + (lang === code ? ' class="on"' : '') + '>' +
+      (f ? '<img src="' + f + '" alt="" height="16">' : code.toUpperCase()) + '</span>';
+  }
+
   function paint() {
-    var dark = h.dataset.theme === 'dark', t = TXT[lang];
-    th.textContent = dark ? '\u2600\uFE0E' : '\u263E';
-    th.title = dark ? t.light : t.dark;
+    var dark = h.dataset.theme === 'dark', t = TXT[lang], flags = !!(FLAGS.en && FLAGS.pt);
+    th.textContent = dark ? '\u263E' : '\u2600\uFE0E';        /* moon = dark mode, sun = light mode */
+    th.title = dark ? t.light : t.dark;                          /* tooltip says what a click does */
     th.setAttribute('aria-label', th.title);
-    lg.innerHTML = '<span' + (lang === 'en' ? ' class="on"' : '') + '>EN</span> / <span' + (lang === 'pt' ? ' class="on"' : '') + '>PT</span>';
+    lg.classList.toggle('flags', flags);
+    lg.innerHTML = flag('en') + (flags ? '' : ' / ') + flag('pt');
     lg.title = t.lang;
     lg.setAttribute('aria-label', t.lang);
   }
@@ -71,9 +82,7 @@
   }
 
   /* ---- theme ---- */
-  if (!h.dataset.theme) {
-    h.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  if (!h.dataset.theme) h.dataset.theme = 'light';
   th.addEventListener('click', function () {
     var n = h.dataset.theme === 'dark' ? 'light' : 'dark';
     h.dataset.theme = n;
@@ -81,11 +90,15 @@
     paint();
   });
   lg.addEventListener('click', function () { setLang(lang === 'en' ? 'pt' : 'en'); });
-  try {
-    matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-      if (!store.get('theme')) { h.dataset.theme = e.matches ? 'dark' : 'light'; paint(); }
-    });
-  } catch (e) {}
+
+  /* pixel-accurate link areas (only loads when a page uses data-mask links) */
+  onDom(function () {
+    if (d.querySelector('a[data-mask]')) {
+      var hs = d.createElement('script');
+      hs.src = base + 'hit.js';
+      d.head.appendChild(hs);
+    }
+  });
 
   paint();
   if (lang === 'pt') load(function () { onDom(apply); });

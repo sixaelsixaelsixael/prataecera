@@ -1,4 +1,4 @@
-﻿/* Prata + Cera - Portuguese (Brazil) strings. Loaded only when a visitor switches to PT. */
+/* Prata + Cera - Portuguese (Brazil) strings. Loaded only when a visitor switches to PT. */
 window.PT = {
   /* shared */
   upd: 'Última atualização',
@@ -29,7 +29,7 @@ window.PT = {
   px_listen: '[★] OUVIR / BANDCAMP',
   px_live: '[★] REGISTRO DE APRESENTAÇÕES AO VIVO',
   px_gear: '[★] WIKI DE EQUIPAMENTOS &amp; HARDWARE',
-  px_back: '[↩] VOLTAR AO MAPA DO SITE',
+  px_back: '[↩] MAPA DO SITE',
 
   /* ao vivo */
   av_h2: '★ [LOG] / AO_VIVO_APRESENTAÇÕES',
@@ -37,6 +37,6 @@ window.PT = {
   av_projv: 'pixote[MIX] Colagem Sonora',
   av_notes: 'Notas:',
   av_note1: 'Instalação sonora experimental ao vivo que combina gravações de campo feitas em casa, sampling vocal e manipulação rítmica. Gravado ao vivo no Zoom R16.',
-  av_back1: '↩ Voltar para PIXOTE',
-  av_back2: '↩ Voltar para o MAPA DO SITE'
+  av_back1: '↩ PIXOTE',
+  av_back2: '↪ MAPA DO SITE'
 };

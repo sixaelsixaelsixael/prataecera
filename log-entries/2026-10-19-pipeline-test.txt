@@ -1,0 +1,12 @@
+Pipeline test
+
+Testing the new log flow. This entry was built from a text file, with a [link](https://github.com/sixaelsixaelsixael/prataecera) and a copyright sign &#169;.
+
+Second paragraph, to check that every paragraph gets its own key..
+
+---pt---
+Teste do pipeline
+
+Testando o novo fluxo do log. Esta entrada foi gerada a partir de um arquivo de texto, com um [link](https://github.com/sixaelsixaelsixael/prataecera) e um sinal de copyright &#169;.
+
+Segundo parágrafo, para conferir que cada parágrafo tem a sua chave..
