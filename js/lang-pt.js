@@ -25,9 +25,6 @@ window.PT = {
 
 	/* AUTO-GENERATED from log-entries/ by scripts/build_log.py - do not edit between the markers */
   /* LOG:START */
-  '2026-10-19-pipeline-test-t': `<strong>Teste do pipeline</strong>`,
-  '2026-10-19-pipeline-test-1': `Testando o novo fluxo do log. Esta entrada foi gerada a partir de um arquivo de texto, com um <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">link</a> e um sinal de copyright &#169;.`,
-  '2026-10-19-pipeline-test-2': `Segundo parágrafo, para conferir que cada parágrafo tem a sua chave..`,
   /* LOG:END */
 
   /* pixote */
