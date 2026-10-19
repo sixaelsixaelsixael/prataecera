@@ -15,13 +15,14 @@ window.PT = {
   lg_h2: '★ [log] / ATUALIZAÇÕES_RECENTES',
   fmt: '[DD.MM.AAAA]',
   meta: 'registro de alterações // log do sistema 𑣲𝄞',
-  u1a: `~ &#169; NENHUM DIREITO RESERVADO!&#8482; ~<br>
+  u1t: `<strong>~ &#169; NENHUM DIREITO RESERVADO!&#8482; ~</strong><br>
             O site inteiro agora é um <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repositório</a> no <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub</a>!`,
   u1b: `Em celebração ao código aberto, sinta-se à vontade para baixar qualquer um dos materiais que encontrar pelas suas andanças.. Adicione-os ao seu próprio site ou simplesmente guarde para a sua admiração. Tirando o link da wiki, o mapa do site deve estar totalmente funcional, então dê uma olhada por aí..𝄞𝄢 <br>
             Também comecei a usar comandos do <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> para fazer boa parte do trabalho tedioso, então o <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repositório</a> funciona como um espelho exato do meu <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>. Pretendo escrever mais sobre essa arquitetura para quem tiver interesse em usos parecidos. Claro que nada disso teria sido possível sem a extensa lista de recursos compartilhados nesta rede maravilhosa. Por isso, é meu dever honrar isso com reciprocidade. Tenho pensado muito nesta era digital da informação e em como a paisagem da soberania também atravessa este espaço.. mas mais sobre isso em breve.. ~`,
-  u2: `~ Site em desenvolvimento contínuo಄..<br>
+  u2t: `<strong>~ Site em desenvolvimento contínuo಄..</strong><br>
             estou aprendendo o básico de html/css/js com a W3Schools, usando o dreamweaver e um pouco de grapesjs.. vou atualizar de vez em quando, passe por aqui uma vez por lua!⋆.☽˚~`,
-    
+
+
 	/* AUTO-GENERATED from log-entries/ by scripts/build_log.py - do not edit between the markers */
   /* LOG:START */
   '2026-10-19-pipeline-test-t': `<strong>Teste do pipeline</strong>`,
