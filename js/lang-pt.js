@@ -21,9 +21,10 @@ window.PT = {
             Também comecei a usar comandos do <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> para fazer boa parte do trabalho tedioso, então o <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repositório</a> funciona como um espelho exato do meu <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>. Pretendo escrever mais sobre essa arquitetura para quem tiver interesse em usos parecidos. Claro que nada disso teria sido possível sem a extensa lista de recursos compartilhados nesta rede maravilhosa. Por isso, é meu dever honrar isso com reciprocidade. Tenho pensado muito nesta era digital da informação e em como a paisagem da soberania também atravessa este espaço.. mas mais sobre isso em breve.. ~`,
   u2: `~ Site em desenvolvimento contínuo಄..<br>
             estou aprendendo o básico de html/css/js com a W3Schools, usando o dreamweaver e um pouco de grapesjs.. vou atualizar de vez em quando, passe por aqui uma vez por lua!⋆.☽˚~`,
-  /* NEW LOG ENTRY: copy a line like the next one, use the same key as data-i18n in sitemap.html
-     u3: `~ Texto da entrada em português aqui.. ~`,
-  */
+    
+	/* AUTO-GENERATED from log-entries/ by scripts/build_log.py - do not edit between the markers */
+  /* LOG:START */
+  /* LOG:END */
 
   /* pixote */
   px_listen: '[★] OUVIR / BANDCAMP',

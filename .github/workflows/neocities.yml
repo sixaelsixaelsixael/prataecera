@@ -22,7 +22,10 @@ jobs:
 
       # Rebuilds the log from log-entries/. Does nothing (and writes nothing)
       # when the entries have not changed, so ordinary page edits are untouched.
+      # continue-on-error: if the log build fails, the error still shows up in red
+      # under Annotations, but the rest of the site still deploys.
       - name: Build log from log-entries/
+        continue-on-error: true
         run: python3 scripts/build_log.py
 
       # Push the rebuilt files back to main so the repo and GitHub Pages match.

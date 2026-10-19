@@ -2,7 +2,7 @@
 """Prata + Cera - rebuild the site log from log-entries/*.md
 
 What it does (see "Automated notes flow" guide):
-  1. Reads every note in log-entries/, newest first.
+  1. Reads every .md / .txt note in log-entries/, newest first.
   2. Rewrites everything between <!-- LOG:START --> / <!-- LOG:END --> in sitemap.html.
   3. Rewrites everything between /* LOG:START */ / /* LOG:END */ in js/lang-pt.js.
   4. If (and only if) the log changed, sets the footer date on every page to today
@@ -12,7 +12,7 @@ What it does (see "Automated notes flow" guide):
 Running it twice in a row changes nothing the second time, so it is safe to run on
 every deploy.
 
-Note file name:   YYYY-MM-DD-short-slug.md      e.g. 2026-10-19-first-note.md
+Note file name:   YYYY-MM-DD-short-slug.md or .txt   e.g. 2026-10-19-first-note.txt
 Note file layout:
 
     Short title
@@ -50,7 +50,7 @@ TIMEZONE = "America/Sao_Paulo"   # Belo Horizonte (MG) follows Brasilia time
 HTML_START, HTML_END = "<!-- LOG:START -->", "<!-- LOG:END -->"
 JS_START, JS_END = "/* LOG:START */", "/* LOG:END */"
 
-NAME_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})-(.+)\.md$")
+NAME_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})-(.+)\.(?:md|txt)$", re.I)
 LINK_RE = re.compile(r'\[([^\]\n]+)\]\(([^)\s"]+)\)')
 FOOTER_RE = re.compile(r"(Last updated</span> )\d{2}\.\d{2}\.\d{4}( ~)")
 SKIP_DIRS = {".git", "dist", "node_modules", "log-entries", "_notes"}
@@ -111,11 +111,11 @@ def load_notes():
     if not NOTES_DIR.is_dir():
         return notes
     for path in sorted(NOTES_DIR.iterdir()):
-        if not path.is_file() or path.name.lower() == "readme.md":
+        if not path.is_file() or path.name.lower() in ("readme.md", "readme.txt"):
             continue
         m = NAME_RE.match(path.name)
         if not m:
-            warn(f"Skipped '{path.name}': name must look like YYYY-MM-DD-slug.md", path)
+            warn(f"Skipped '{path.name}': name must look like YYYY-MM-DD-slug.md (or .txt)", path)
             continue
         try:
             date = dt.date(int(m[1]), int(m[2]), int(m[3]))
@@ -192,7 +192,7 @@ def main():
 
     notes = load_notes()
 
-    changed = False
+    pending = []
     for path, start, end, body in (
         (SITEMAP, HTML_START, HTML_END, render_html(notes)),
         (LANG_PT, JS_START, JS_END, render_js(notes)),
@@ -202,8 +202,10 @@ def main():
         old, eol = read(path)
         new = replace_between(old, start, end, body, str(path.relative_to(ROOT)))
         if new != old:
-            write(path, new, eol)
-            changed = True
+            pending.append((path, new, eol))
+    for path, new, eol in pending:      # only reached if BOTH files passed
+        write(path, new, eol)
+    changed = bool(pending)
 
     if not changed:
         print(f"Log already up to date ({len(notes)} entries). Nothing written.")
