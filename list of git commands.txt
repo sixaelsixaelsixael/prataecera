@@ -1,4 +1,11 @@
-git pull
+git pull  
+[Fetch from and integrate with another repository or a local branch, Integrates changes from a remote repository into the current branch.]
+
 git add .
+[Adds contents of new or changed files to the index. The "index" (also known as the "staging area") is what you use to prepare the contents of the next commit.]
+
 git commit -m "insert note here :)"
+[Records changes to the repository. Creates a new commit containing the current contents of the index and the given log message describing the changes.]
+
 git push
+[Updates one or more branches, tags, or other references in one or more remote repositories from your local repository, and sends all necessary data that isn’t already on the remote.]

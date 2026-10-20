@@ -1,46 +1,44 @@
 /* Prata + Cera - Portuguese (Brazil) strings. Loaded only when a visitor switches to PT. */
 window.PT = {
   /* shared */
-  upd: '√öltima atualiza√ß√£o',
-  a_header: 'R√≥tulo de cabe√ßalho Prata + Cera',
-  a_content: 'R√≥tulo de conte√∫do Prata + Cera',
-  a_portal: 'R√≥tulo do portal principal Prata + Cera',
-  a_note: 'R√≥tulo de nota musical Prata + Cera',
-  t_sitemap: '‚òÖ PORTAL // MAPA DO SITE ‚òÖ',
-  t_wiki: '‚òÖ WIKI // EM BREVE ‚òÖ',
+  upd: '⁄ltima atualizaÁ„o',
+  a_header: 'RÛtulo de cabeÁalho Prata + Cera',
+  a_content: 'RÛtulo de conte˙do Prata + Cera',
+  a_portal: 'RÛtulo do portal principal Prata + Cera',
+  a_note: 'RÛtulo de nota musical Prata + Cera',
+  t_sitemap: '? PORTAL // MAPA DO SITE ?',
+  t_wiki: '? WIKI // EM BREVE ?',
 
   /* sitemap */
-  sm_h2: '‚òÖ [RAIZ] / MAPA_DO_SITE_ARQUIVO',
-  sm_disc: 'discografia‚ô¨‚ãÜ.Àö',
-  lg_h2: '‚òÖ [log] / ATUALIZA√á√ïES_RECENTES',
+  sm_h2: '? [RAIZ] / MAPA_DO_SITE_ARQUIVO',
+  sm_disc: 'discografia??.∞',
+  lg_h2: '? [log] / ATUALIZA«’ES_RECENTES',
   fmt: '[DD.MM.AAAA]',
-  meta: 'registro de altera√ß√µes // log do sistema ë£≤ùÑû',
-  u1a: `~ &#169; NENHUM DIREITO RESERVADO!&#8482; ~<br>
-            O site inteiro agora √© um <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">reposit√≥rio</a> no <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub</a>!`,
-  u1b: `Em celebra√ß√£o ao c√≥digo aberto, sinta-se √† vontade para baixar qualquer um dos materiais que encontrar pelas suas andan√ßas.. Adicione-os ao seu pr√≥prio site ou simplesmente guarde para a sua admira√ß√£o. Tirando o link da wiki, o mapa do site deve estar totalmente funcional, ent√£o d√™ uma olhada por a√≠..ùÑûùÑ¢ <br>
-            Tamb√©m comecei a usar comandos do <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> para fazer boa parte do trabalho tedioso, ent√£o o <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">reposit√≥rio</a> funciona como um espelho exato do meu <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>. Pretendo escrever mais sobre essa arquitetura para quem tiver interesse em usos parecidos. Claro que nada disso teria sido poss√≠vel sem a extensa lista de recursos compartilhados nesta rede maravilhosa. Por isso, √© meu dever honrar isso com reciprocidade. Tenho pensado muito nesta era digital da informa√ß√£o e em como a paisagem da soberania tamb√©m atravessa este espa√ßo.. mas mais sobre isso em breve.. ~`,
-  u2: `~ Site em desenvolvimento cont√≠nuo‡≤Ñ..<br>
-            estou aprendendo o b√°sico de html/css/js com a W3Schools, usando o dreamweaver e um pouco de grapesjs.. vou atualizar de vez em quando, passe por aqui uma vez por lua!‚ãÜ.‚òΩÀö~`,
-    
+  meta: 'registro de alteraÁıes // log do sistema ????',
+  u1t: `<strong>~ &#169; NENHUM DIREITO RESERVADO!&#8482; ~</strong><br>
+            O site inteiro agora È um <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repositÛrio</a> no <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub</a>!`,
+  u1b: `Em celebraÁ„o ao cÛdigo aberto, sinta-se ‡ vontade para baixar qualquer um dos materiais que encontrar pelas suas andanÁas.. Adicione-os ao seu prÛprio site ou simplesmente guarde para a sua admiraÁ„o. Tirando o link da wiki, o mapa do site deve estar totalmente funcional, ent„o dÍ uma olhada por aÌ..???? <br>
+            TambÈm comecei a usar comandos do <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a> para fazer boa parte do trabalho tedioso, ent„o o <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repositÛrio</a> funciona como um espelho exato do meu <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>. Pretendo escrever mais sobre essa arquitetura para quem tiver interesse em usos parecidos. Claro que nada disso teria sido possÌvel sem a extensa lista de recursos compartilhados nesta rede maravilhosa. Por isso, È meu dever honrar isso com reciprocidade. Tenho pensado muito nesta era digital da informaÁ„o e em como a paisagem da soberania tambÈm atravessa este espaÁo.. mas mais sobre isso em breve.. ~`,
+  u2t: `<strong>~ Site em desenvolvimento contÌnuo?..</strong><br>
+            estou aprendendo o b·sico de html/css/js com a W3Schools, usando o dreamweaver e um pouco de grapesjs.. vou atualizar de vez em quando, passe por aqui uma vez por lua!?.?∞~`,
+
+
 	/* AUTO-GENERATED from log-entries/ by scripts/build_log.py - do not edit between the markers */
   /* LOG:START */
-  '2026-10-19-pipeline-test-t': `<strong>Teste do pipeline</strong>`,
-  '2026-10-19-pipeline-test-1': `Testando o novo fluxo do log. Esta entrada foi gerada a partir de um arquivo de texto, com um <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">link</a> e um sinal de copyright &#169;.`,
-  '2026-10-19-pipeline-test-2': `Segundo par√°grafo, para conferir que cada par√°grafo tem a sua chave..`,
   /* LOG:END */
 
   /* pixote */
-  px_listen: '[‚òÖ] OUVIR / BANDCAMP',
-  px_live: '[‚òÖ] REGISTRO DE APRESENTA√á√ïES AO VIVO',
-  px_gear: '[‚òÖ] WIKI DE EQUIPAMENTOS &amp; HARDWARE',
-  px_back: '[‚Ü©] MAPA DO SITE',
+  px_listen: '[?] OUVIR / BANDCAMP',
+  px_live: '[?] REGISTRO DE APRESENTA«’ES AO VIVO',
+  px_gear: '[?] WIKI DE EQUIPAMENTOS &amp; HARDWARE',
+  px_back: '[?] MAPA DO SITE',
 
   /* ao vivo */
-  av_h2: '‚òÖ [LOG] / AO_VIVO_APRESENTA√á√ïES',
+  av_h2: '? [LOG] / AO_VIVO_APRESENTA«’ES',
   av_proj: 'Projeto:',
   av_projv: 'pixote[MIX] Colagem Sonora',
   av_notes: 'Notas:',
-  av_note1: 'Instala√ß√£o sonora experimental ao vivo que combina grava√ß√µes de campo feitas em casa, sampling vocal e manipula√ß√£o r√≠tmica. Gravado ao vivo no Zoom R16.',
-  av_back1: '‚Ü© PIXOTE',
-  av_back2: '‚Ü™ MAPA DO SITE'
+  av_note1: 'InstalaÁ„o sonora experimental ao vivo que combina gravaÁıes de campo feitas em casa, sampling vocal e manipulaÁ„o rÌtmica. Gravado ao vivo no Zoom R16.',
+  av_back1: '? PIXOTE',
+  av_back2: '? MAPA DO SITE'
 };
