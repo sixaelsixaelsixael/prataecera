@@ -36,9 +36,18 @@ window.PT = {
   /* ao vivo */
   av_h2: '★ [LOG] / AO_VIVO_APRESENTAÇÕES',
   av_proj: 'Projeto:',
-  av_projv: 'pixote[MIX] Colagem Sonora',
+  av_proj_untitled: '"SEM TÍTULO"',    
+  av_proj2: 'Nossa estreia no ZuZu',    
+  av_proj3: 'pixote[MIX] Colagem Sonora',
+  av_proj4: 'DANCE OR DONT',
+  av_proj5: '"Lagoon" Instalação Audiovisual com MayaWaves',    
+  av_E5: 'ao vivo @ CCTV // "Lagoon" com MayaWaves',    
   av_notes: 'Notas:',
-  av_note1: 'Instalação sonora experimental ao vivo que combina gravações de campo feitas em casa, sampling vocal e manipulação rítmica. Gravado ao vivo no Zoom R16.',
+  av_note1: 'Um setzin muito especial p mim, Sentimo-nos em casa, apesar de ser a nossa primeira vez.. uma noite marcante conheci um povo bão d++ um cheiro do coração ao Rabbithole..&#9825; ....𝄞',
+  av_note2: 'Nossa estreia no ZuZu &#9825 ....𝄞𝄢',
+  av_note3: 'Instalação sonora experimental ao vivo que combina gravações de campo feitas em casa, sampling vocal e manipulação rítmica. Gravado ao vivo no Zoom R16.',
+  av_note4: 'nossa segunda apresentação fazendo parte do DANCE OR DONT ☆*:·ﾟ',
+  av_note5: 'Fomos convidados pra tocar no <a href="https://www.cctvcambridge.org/about/" target="_blank" rel="noopener noreferrer">CCTV</a>, numa instalação audiovisual organizada e curada pelo meu amigo querido  <a href="https://www.instagram.com/maya.waves/" target="MayaWaves" rel="noopener noreferrer">Fola</a></span>. Foi a minha primeira vez apresentando um set improvisado usando somente os Pocket Operators como fontes sonoras - Todos os sons que vocês estão ouvindo vêm delas + passem pelo alguns pedais pra processamento de áudio ++ são gravado ao vivo no R16 — que, aliás, esqueci de colocar pra gravar nos primeiros quatro minutos da peça:)',    
   av_back1: '↩ PIXOTE',
   av_back2: '↪ MAPA DO SITE'
 };
