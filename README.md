@@ -1,5 +1,6 @@
 ﻿# PRATA + CERA - ꒰১WORKFLOW REFERENCE໒꒱ - "READ ME!"
 #### ~★Written 19.10.2026★~~ +current flow as of last commit to this MD+.✦ ݁˖
+```
                                               #                                                                                                    
                                             ####                                                                                                   
                                            #++##                                                                                                   
@@ -122,7 +123,7 @@ from ur local directory, and not into the local directory (see section 4).
 
 ## 2. The pieces
 
-
+```
 ★-| Piece                                        | Runs where                     | Starts when                                      | What it does.
 
 ★-| Git + Git Bash                               | your PC                        | you type a command                               | Tracks changes; sends them to GitHub and fetches them back.
@@ -131,7 +132,7 @@ from ur local directory, and not into the local directory (see section 4).
 ★-| Workflow `.github/workflows/neocities.yml`   | GitHub's servers               | any push to `main`, or the "Run workflow" button | Builds the log, commits it back, deploys to Neocities.
 ★-| `scripts/build_log.py`                       | inside the workflow (Python 3) | step 1 of the workflow                           | Rebuilds the log from `log-entries/`.                     
 ★-| `js/site.js`, `js/lang-pt.js`, `js/hit.js`   | the visitor's browser          | page load                                        | Theme and language buttons, Portuguese text, click areas. Not part of any pipeline.
-
+```
 
 
 ### What the workflow does, step by step 
@@ -168,7 +169,7 @@ from ur local directory, and not into the local directory (see section 4).
 
 File name: `YYYY-MM-DD-short-slug.txt` (or `.md`), for example `2026-10-19-first-note.txt`.
 
-```
+
 Short title
 
 English paragraph. Links work like [this](https://example.com).
