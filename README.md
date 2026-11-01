@@ -1,6 +1,6 @@
 ﻿# PRATA + CERA - WORKFLOW REFERENCE - "READ ME!"
 #### ~★Written 19.10.2026★~~ 
-.
+```
                                          x;::                                       
                                         xXx:;                                       
                                         .:;;;;                                      
@@ -53,14 +53,14 @@ xxxX$$$&$$&&&$&&x:$&&&Xx;;x&&&$$$&:..X$$$xXXXx...x$$$..$$&.....xx$$$$$..X$...;Xx
                                            xxxx.:;                                  
                                            xxxX.x                                   
                                             xXx.&                                   
-                                                                                    
+```                                                                        
 ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪
 This sheet explains how the repo, GitHub Pages, Neocities and
 your local `pecweb` folder fit together, 
 what each script does, and what to do
 for each way of making a change.
 
->+++If u want to jump straight in,''++++
+``+++If u want to jump straight in,''++++``
 
 >Sections (## 4. + ## 5.) 
     cover the 2 main routes we use⋆.☽˚~`,
@@ -189,7 +189,7 @@ Outro paragrafo em portugues.
   warning (this includes `.gitkeep.txt`).
 > Never edit between the `LOG:START` / `LOG:END` markers by hand. The next build overwrites it.
 
-.
+```
                              +$$$$$$+:.;:                          
                                 . +&$$     .                       
        :.;:                  .  ;&&;:$&.     .                     
@@ -230,8 +230,7 @@ Outro paragrafo em portugues.
        :XXXXx;:       .     ::   .   .      .  ......              
                         . ;          .             ..              
                        x;  
-
-
+                       ```
 
 
 
@@ -349,12 +348,7 @@ A conflict looks like `<<<<<<< HEAD` ... `=======` ... `>>>>>>>` inside a file.
 Open the file,
 keep the version you want, delete the three marker lines, 
 then `git add .` and `git commit`.
-To check nothing is left:
-```
-grep -rn "^<<<<<<<\|^=======\|^>>>>>>>" --include="*.html" --include="*.css" --include="*.js" .
-```
 
-It should print nothing.
 
 ### B4. `git push` is rejected ("fetch first" / "remote contains work you do not have")
 
