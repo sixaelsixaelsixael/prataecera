@@ -237,16 +237,16 @@ Outro paragrafo em portugues.
 
 
 ## 3. Which route do I use? ( ╹ -╹)?
+```
+★-| I want to...                                | Use                                             | Notes.
 
-★-.| I want to...                                | Use                                             | Notes.
+★-| Add, fix or delete a log entry              | **A1** (GitHub) or **B5** (notes from Git Bash) | The build does the rest.
+★-| Fix a typo or change a page                 | **B** (local) or **A2** (GitHub)                | Update the page's footer date yourself.
+★-| Change CSS, JS or masks                     | **B** (local)                                   | Test locally first.
+★-| Add several things at once                  | **B**                                           | One commit, one deploy.
+★-| Change something in the Neocities dashboard | **Avoid.** See **C**                            | It is not saved anywhere else.
 
-★-`| Add, fix or delete a log entry              | **A1** (GitHub) or **B5** (notes from Git Bash) | The build does the rest.
-★-`| Fix a typo or change a page                 | **B** (local) or **A2** (GitHub)                | Update the page's footer date yourself.
-★-`| Change CSS, JS or masks                     | **B** (local)                                   | Test locally first.
-★-`| Add several things at once                  | **B**                                           | One commit, one deploy.
-★-`| Change something in the Neocities dashboard | **Avoid.** See **C**                            | It is not saved anywhere else.
-★-`
-
+```
 
 
 
@@ -397,13 +397,13 @@ All the notes in that commit publish together; the log is rebuilt once. You do n
 change in the Neocities dashboard or upload there exists only on Neocities.
 
 What can happen to a hand edit on Neocities (verify):
-
+```
 ★-| What you did on Neocities                    | What happens at the next deploy |
 
 ★-| Edited a file that the workflow deploys      | It can be **overwritten** by the repo's version, because the deploy action re-uploads files whose contents differ.
 ★-| Uploaded a file the workflow does not deploy | It stays, because `cleanup` is `false`.
 ★-| Deleted a file that the workflow deploys     | It is re-uploaded at the next deploy.
-
+```
 If you did edit something on Neocities and want to keep it:
 
 1. Download or copy the file's content from Neocities.
@@ -443,6 +443,7 @@ git status -sb                       # expect:  ## main...origin/main  and nothi
 
 ## 8. Command reference
 -----------------------------------------------
+```
 ★-| Command                        | What it does.
 
 ★-| `cd "/path/to/pecweb"`         | Go to the site folder. Quotes are needed if the path has spaces.
@@ -468,7 +469,7 @@ git status -sb                       # expect:  ## main...origin/main  and nothi
 ★-| `git clone <url>`              | Copy the repo onto a new computer.
 ★-| `grep -rn "^<<<<<<<..." .`     | Find leftover merge-conflict markers (see B3).
 ★-| `python3 scripts/build_log.py` | Rebuild the log locally. Normally you never need it.
-
+```
 
 >++++First-time setup on a computer
 ```
@@ -483,12 +484,12 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
 
 
 ## 9. Troubleshooting
+
+some common issues i've run into here n there and tips+remedies that have proved helpful, 
 ```
-```some common issues i've run into here n there and tips+remedies that have proved helpful, ```
 
 ★----------------------------------Symptom ----------------------> Likely cause(s) ----------------------------> Fix 
 
-```
 ★-|-`git pull` blocked: "local changes would be overwritten" -----> You have uncommitted edits to a file GitHub also changed  ---------> refer to B3* 
 ★-|---------------------- `git push` rejected: "fetch first" -----> GitHub has a newer commit (often the bot's)  ---------> `git pull`, then `git push` 
 ★-|------------------------An editor opens during `git pull` -----> Git wants a merge message  ---------> Save and close it 
@@ -501,7 +502,7 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
 ★-|-----------------------Site looks unchanged after a push  -----> Browser cache, or the run has not finished  ---------> Wait for the green check; private tab or Ctrl+Shift+R .
 ★-|---------Footer date did not change on a page you edited  -----> The script only changes dates when the log changes  ---------> Edit the footer date yourself.
 ★-|----------------------------Local folder says "behind N"  -----> GitHub has commits you do not (phone edits, bot commits) ---------> `git pull`.
-
+```
 
 
 
@@ -539,7 +540,7 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
 ## PURASINTONIA++𝄞⨾ Prata+Cera… 978..★⋆𝄞⋆♡☆*:·ﾟ
 
   
-  ★
+ ``` ★
                              JLJHFH                                                                 
                              OONLJJJJH                                                              
                              ONLLJLJJJHH                                            JJ              
@@ -580,9 +581,9 @@ JLLFJJLNNNNNLLLLLLLLJJJJJJJLJNNJDDHFHLNNNLLFFFNLNLHNLFJJONLNNLJFLJJHJJLNNNNNNNNO
                                    HNSSSSSSQONNFFFFD     HLLNLLLNNOONND                             
                                    HHNOQQQQNLLLJHFB        JJNNLLLNNLJ                              
                                     HJLLLLJF                 HJJJJOOJ 
+```
 
-
-
+```
 ★
                           @@@@@@@@@@@@@@@@@@@                                                                                                                                                  
                     @@@@@                     @@@@@                                                                                                                                            
@@ -633,7 +634,7 @@ JLLFJJLNNNNNLLLLLLLLJJJJJJJLJNNJDDHFHLNNNLLFFFNLNLHNLFJJONLNNLJFLJJHJJLNNNNNNNNO
                                                 @@@@@@@                              @@@@@@@                                                                                                   
                                                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                                                                           
 ★
-
+```
 
 
 
