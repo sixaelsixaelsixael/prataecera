@@ -1,5 +1,6 @@
-﻿# PRATA + CERA - ꒰১WORKFLOW REFERENCE໒꒱ - "READ ME!"
-#### ~★Written 19.10.2026★~~ +current flow as of last commit to this MD+.✦ ݁˖
+﻿# ꒰১WORKFLOW REFERENCE໒꒱ - "READ ME!"
+#### ~★Written 19.10.2026★~~ +current flow as of last commit to this MD+.✦ ݁˖ 
+["uma versão em português esta em desenvolvimento também]
 ```
                                               #                                                                                                    
                                             ####                                                                                                   
@@ -603,14 +604,14 @@ some common issues i've run into here n there and tips+remedies that have proved
 
 ★-|**⤷The repo is public.** Anything committed, including notes, can be read by anyone.
    Keep drafts outside the repo until you want them live゛ˎˊ˗
-   
+```   
 -------------------------------------------------------------------------
 >!++++++++++++++++++++++++++++!+IMPORTANT+!++++++++++++++++++++++++++++!<
-        >Never put tokens or passwords your main branch!!!!**<+   
-    ++>The Neocities key lives only in GitHub's encrypted secrets<++     
+>Never put tokens, passwords, or sensitive documents your main branch!!!!**<+   
+    ++>The Neocities key should live only in GitHub's encrypted secrets<++     
  >!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++!<
 -------------------------------------------------------------------------
-
+```
 
 
 
