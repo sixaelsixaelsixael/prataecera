@@ -1,4 +1,4 @@
-﻿# ꒰১WORKFLOW REFERENCE໒꒱ - "READ ME!"
+# ꒰১WORKFLOW REFERENCE໒꒱ - "READ ME!"
 #### ~★Written 19.10.2026★~~ +current flow as of last commit to this MD+.✦ ݁˖ 
 ["uma versão em português esta em desenvolvimento também]
 ```
@@ -56,10 +56,12 @@
                                                #                                                                                                +##
 ```                                                                        
 ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♪
-This sheet explains how the repo, GitHub Pages, Neocities and
-your local `pecweb` folder fit together, 
-what each script does, and what to do
-for each way of making a change.
+This sheet explains 
+*how the repo, GitHub Pages, Neocities &
+the local `pecweb` folder fit together, 
+*what each script does,
+*what to do for each way of making a change.
+*basic troubleshooting + git commands
 
 ``+++If u want to jump straight in,''++++``
 
@@ -82,7 +84,7 @@ for each way of making a change.
 -   **local/ `pecweb` is the phsyical SSD root source, which also mirrors.
 - Nothing flows from Neocities back to GitHub. Neocities is an output, not a source.
 
-One sentence to remember:
+Keep in mind:
 > GitHub `main` is the master copy. Your PC holds a working copy you edit and push.
 > Neocities and GitHub Pages are published copies.
 
@@ -281,7 +283,7 @@ Outro paragrafo em portugues.
 ★-| Fix a typo or change a page                 | **B** (local) or **A2** (GitHub)                | Update the page's footer date yourself.
 ★-| Change CSS, JS or masks                     | **B** (local)                                   | Test locally first.
 ★-| Add several things at once                  | **B**                                           | One commit, one deploy.
-★-| Change something in the Neocities dashboard | **Avoid.** See **C**                            | It is not saved anywhere else.
+★-| Change something in the Neocities dashboard | **Avoid.** See **C**                            | Im tryna tell yall stay away from this! lol.
 
 ```
 
@@ -334,9 +336,10 @@ footer in the same commit.
 ### B0. Start of every session
 
 ```
-cd "/path/to/pecweb"
-git status -sb          # shows "behind N" if GitHub has newer commits
-git pull                # bring them down BEFORE you edit anything
+cd "/path/to/pecweb"    - alternatively you can type "cd " and drag your root folder in as well.
+                        - if you're on Windows you can also right click in your root folder and launch Git Bash from there.
+git status -sb          # shows "behind N" if GitHub has newer commits.
+git pull                # bring them down BEFORE you edit anything.
 ```
 
 ### B1. The standard flow
