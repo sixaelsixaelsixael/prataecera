@@ -234,6 +234,8 @@ Outro paragrafo em portugues.
 
 
 
+
+
 ## 3. Which route do I use? ( ╹ -╹)?
 
 ★-.| I want to...                                | Use                                             | Notes.
@@ -244,6 +246,8 @@ Outro paragrafo em portugues.
 ★-`| Add several things at once                  | **B**                                           | One commit, one deploy.
 ★-`| Change something in the Neocities dashboard | **Avoid.** See **C**                            | It is not saved anywhere else.
 ★-`
+
+
 
 
 
@@ -280,6 +284,13 @@ footer in the same commit.
 - **Your local folder is now behind GitHub.** The bot adds a commit too.
 - Before you edit anything locally, run `git pull`.
 - Check the **Actions** tab: a green check means it deployed.
+
+
+
+
+
+
+
 
 ## 5. Route B - commit from Git Bash in your local `pecweb` folder
 
@@ -375,6 +386,11 @@ All the notes in that commit publish together; the log is rebuilt once. You do n
   commit local build results unless you mean to.
 
 
+
+
+
+
+
 ## 6. Route C - edit directly on Neocities
 
 **There is no pipeline from Neocities back to GitHub.** None has been written. Anything you
@@ -397,6 +413,10 @@ If you did edit something on Neocities and want to keep it:
 >**avoid editing deployed files on Neocities directly.** Preferably Use Routes A or B.
 
 
+
+
+
+
 ## 7. Bring your local folder in line with GitHub (one time)
 
 Use this when GitHub is the version you want and your local copy is behind or damaged.
@@ -415,6 +435,9 @@ git status -sb                       # expect:  ## main...origin/main  and nothi
 - It does not touch untracked or ignored files (audio, `.psd`, `_notes/`).
 - Any `??` lines left in `git status` are untracked files. Delete them or ignore them.
 - Gentler alternative: `git restore <file>` on the specific files, then `git pull`.
+
+
+
 
 
 
@@ -455,6 +478,10 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
 ```
 >♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬
 
+
+
+
+
 ## 9. Troubleshooting
 ```
 ```some common issues i've run into here n there and tips+remedies that have proved helpful, ```
@@ -474,6 +501,9 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
 ★-|-----------------------Site looks unchanged after a push  -----> Browser cache, or the run has not finished  ---------> Wait for the green check; private tab or Ctrl+Shift+R .
 ★-|---------Footer date did not change on a page you edited  -----> The script only changes dates when the log changes  ---------> Edit the footer date yourself.
 ★-|----------------------------Local folder says "behind N"  -----> GitHub has commits you do not (phone edits, bot commits) ---------> `git pull`.
+
+
+
 
 
 ## > Rules of thumb
@@ -502,6 +532,9 @@ git config --global --add safe.directory "<path to the folder>"    # only for dr
     ++>The Neocities key lives only in GitHub's encrypted secrets<++     
  >!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++!<
 -------------------------------------------------------------------------
+
+
+
 
 ## PURASINTONIA++𝄞⨾ Prata+Cera… 978..★⋆𝄞⋆♡☆*:·ﾟ
 
