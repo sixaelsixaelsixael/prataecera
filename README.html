@@ -1,0 +1,682 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+
+    <title data-i18n="readme">★ READ ME ★</title>
+
+    <!-- Preconnect to external CDN hosts -->
+    <link rel="preconnect" href="https://s3.pub2.infomaniak.cloud" crossorigin />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <!-- Apply saved theme/language before first paint (prevents a flash) -->
+    <script>(function(){var d=document.documentElement,t,l;try{t=localStorage.getItem("theme");l=localStorage.getItem("lang")}catch(e){}d.dataset.theme=t==="dark"?"dark":"light";if(l==="pt"){d.dataset.lang="pt";d.lang="pt-BR"}})()</script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/passiflora%20edulis%20sims.webp" />
+</head>
+
+  <body>
+    <script src="file:js/site.js"></script>
+<main class="portal-container">
+  
+
+  <!-- Top Banner Node -->
+  <header class="portal-header">
+        <a href="./" data-mask="banner">
+          <img class="inv" src="https://s3.pub2.infomaniak.cloud/object/v1/AUTH_b5666b81a83f47b18640be9b02448960/PRATA%20E%20CERA%20-%20ARQUIVO%20DE%20WEB%20UI/WEBP_FONTE/morokuia_rama_web.webp" alt="Prata + Cera Main Portal Label" data-i18n-alt="a_portal" title="home//casa" fetchpriority="high" decoding="async" />
+        </a>
+      </header>
+	  
+      <!-- Sitemap / Tree View Card -->
+
+	
+<h1 id="꒰১workflow-reference໒꒱---read-me">꒰১WORKFLOW REFERENCE໒꒱ <br>
+- “READ ME!”</h1>
+<h4 id="★written-19.10.2026★-current-flow-as-of-last-commit-to-this-md.✦-݁˖">~★Written 19.10.2026★~~ <br>
++current flow as of last commit+.✦ ݁˖</h4>
+<p>["uma versão em português esta em desenvolvimento também]</p>
+
+    
+  <pre class="scroll-container"><code class="scroll-container">                                              
+	                                     #                                                                                                    
+                                            ####                                                                                                   
+                                           #++##                                                                                                   
+                                           +++++#                                                                                +--++#####+++
+                                            ++++#                                                                             #++#######+++++++##
+                                            ++++#                                                                          #++++++++++++++####++++#
+                                            +++##                                                                        #+++###############+++++++
+                                            ++##                                                                       +###++++++++++++++++##+#####
+                                            ++###                              #+#                                   -+++#++++++#############+###++
+                                            #+####  +####++#++++++-++++++++-------+#                                -+++++#######+##++#########+###
+                     # ####+++###+----++++++++--++++---++#++++++-++++#----------+--#                               -+#++++##+++++####+++###+###+###
+      ##++++++++#-+++++++#+++##++++++++#++##++#########################++++++---+++#                              +++#++##++++########+++######++++
+     ##+++######+-######-+###++########+#####-+##+--########+++##++###-#+---+##+#--+                            ++++######+###+++++++###########+++
+    ###--#######+-++-+#+-+##+---+#####+---###-+#+----#####+---+##-+##+-#+-++-+++-.-+#                         ++++####+++++++++#####++#####+######+
+    ###--#######+-+##-+--##+-+#+-+####+-+-+##-+#--##-+###+--+####-+##+-#+-#+--+--++-#                      ++++++##+++###++##########+######+##+##+
+    ###--########-+##+--###-+##+-+####--#-+##-+--+##+-##+--######--##+-#--##--+-+++-#                     --+##+++++###++#+++++###++##++####++#####
+    ###--########-+##+--##+-+###-+####--#--#+-+--###+-##--+######------#--++----+#+-#                   --+#++++++##++++##++#++#++#++##++#####+####
+     ##--########-+##----#+-+##+-+####-+#+-++-+--###+-##--#######-----+#--------+++-+                  --+++++++###+++##++##++++##+##+##+######+#+#
+    ###+-+#######-+#+-+#-+#--+#+-####+-##+---+#--###-+##--#######-+##-+#--##--+--+--##               --+#++++++###++#+####+++++###++#++######+#+##+
+    ###+------###--#++######+---+####+-###+--##+-----###+-#######-+##-+#--##--#----+##               -+#++++####+++##+##++++##+#+##+#++######+##+##
+    ++##+-+++#########+#######+#################+--+####+--+++###-+##++#++##--+#+++++#              -+#+++###+++++##++##+####+++++++##++#####++#+-+
+    ++###############+-+####################+##########-+#+---+##-+##-+#+--++##++++++#             -+++++##+++++##+++###+#########+++#+++#####++++#
+    #+################++###############################+-###+####-+##+##++#+----++++##           -++++++##+++++#++++########++##++##+####++###++++#
+    ################++####++++#######+++########+---###+-####----+######-+##--++#+++##     ------+#######++++++++####++###++##+++#+##++###++###++++
+    ######----------+++#+------+####---+++######----+##+-###++++-+##++#+--#+---+##--#     ++++++++++#####++#+++#+++#+++++++#####+#++++++##+++#+---+
+    +#####++-+--+---+#-+#++-++---##+-+##+-#####+--#--+#+-###+-##+-##--#+--#+-+--#---+#    ++++++++++++###++++#+++++#++++   +#+++#######+++----++---
+    #+########-+#####+-+##+-+##--##--####++####+-+##-+#+-###-+##+-#+-++---#--#+---++-#     ++++++++++++##++++++--+++++++    -+++++#++--+#+---##++++
+    ++########-+#####+-+##+-##+-+##-+####++####+-+##-+#+-###-++#-+#++#--+-+--+----#-+#       ++++++++++++++++++##+--++++    ++######+-+#+---+#+++++
+    ++########-+#####+-+##+-+--+###-+###+++####+-+##+-#-+###-+++-+#-##+#+-+-------+--#        +++++++++++++++++##+++++++     -#+##++-----+#+++++###
+     +########-+#####+-+##+----+###++###+-#####+-+##+---###+-###-++-####+-+-##--+-+-+#         +++++++++++++++##++++#+++     -+-+++-+++--+##++++#++
+     +########++#####+-###+-##+-+##+++#+-+#####+-####++####+-##+-+++####-++-##-++---#          ++++++++++++++#+++######+     --+##--#+++-+##+###+--
+     +########++#####+-###+-###++-+#++++++#####+-##########+-###+#++####-+#+##-+#+++#          ++++++++++#++##+++#++####+    --+##---+#+++-+++##+-+
+     +########++######-###++#####+-##++++#####++-###########+###########+############           ++++++++++++#+++##+++++#+    ---+++-+##++##+++++++-
+     +#########################################+##+--+#+-##++#####################+#             +++++++++###+-+#+-----++++  +++++++-+++####++###++
+     ############################################+-+####++#-+##++#################+#             ++++++++###+--##++----------+++-+-#+--#####++###+#
+     ++##########################################++#####+-++###+-##################               +++++####++++##+---++------+###+-+##++###+++++++#
+      #########################################+#++++++++--+########++##########+##                ++++######++#+++++##++++++++++#--+#++++#+++###++
+      #####################################+++-+##+--+++#++##+++++++----++++#####                   +++++#######+++++#####++###++++#+##+++##++#####
+        ##++++++++####+++###+#++++++++++++++-+############+ +##+##### # #                             +++++#####++++++++++#+++++++++##+#++##++#####
+          ##############                     #######                                                     +########+++#####++++###+--+++##+##++###++
+                                             ####+###                                                       +###++++++ ##++#++++##+##++###++###++++
+                                             ####+###                                                        #######   +++++##+++##+##+###++####++#
+                                             ####+##                                                                  ++++-++++####+++++###+####++#
+                                             ####+##                                                               ++++++++++#####+++++#####++##++#
+                                             ####+##                                                     ----------++--++-++++++#############+####+
+                                             ####++#                                                   ------+--------++--+++++###++++#############
+                                              ###++#                                                   ------+++++++-------+++-+--+++##+###########
+                                              ###++#                                                    ++++++++++-----------+++++-+---+##+########
+                                              #+#++#                                                       #++####--+++--------+++-++-++###########
+                                              ###++#                                                              +++++++-++++-+----#++++#++#++####
+                                               #####                                                                    #+-              ++++#++###
+                                               #                                                                                                +##
+</code></pre>
+<p>♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪<br><br>
+This sheet explains<br>
+*how the repo, GitHub Pages, Neocities &amp;<br>
+the local <code>pecweb</code> folder fit together,<br>
+*what each script does,<br>
+*what to do for each way of making a change.<br>
+*basic troubleshooting + git commands</p><br>
+	  
+<p><code>+++If u want to jump straight in,''++++</code></p>
+<blockquote>
+<p>Sections (## 4. + ## 5.)<br>
+cover the 2 main routes we use⋆.☽˚~`,</p>
+</blockquote>
+<blockquote>
+<p>Sections (## 8. + ## 9.)<br>
++first time set up<br>
++frequently used commands<br>
++troublshooting tips/remedies.,</p><br>
+</blockquote>
+<p>♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬</p>
+<h2 id="where-things-stand-right-now">0. Where things stand right now</h2><br>
+<ul>
+<li>The <strong>GitHub repo (<code>main</code>) is the main version.</strong><br>
+Neocities serves as it’s mirror domain,<br>
+therefore the two are always synonymous.</li>
+</ul>
+<ul>
+<li>**local/ <code>pecweb</code> is the phsyical SSD root source, which also mirrors.</li>
+<li>Nothing flows from Neocities back to GitHub. Neocities is an output, not a source.</li>
+</ul>
+<p>Keep in mind:</p>
+<blockquote>
+<p>GitHub <code>main</code> is the master copy. Your PC holds a working copy you edit and push.<br>
+Neocities and GitHub Pages are published copies.</p>
+</blockquote>
+<h2 id="architecture">1. architecture</h2>
+	  <div class="container-fluid">
+</div>
+<pre class="scroll-container"><code class="scroll-container">
+♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬
+
+
+  phone / browser                      +-----------------------------+
+  (edit on github.com)  ------------&gt;  |   GITHUB REPO  (branch main)|  &lt;---- git push ----  local pecweb
+                                       |   the master copy           |
+                                       |                             |  ----- git pull ---&gt;  (Git Bash)
+                                       +--------+-------------+------+  
+                                                |             |
+                              (automatic)       |             |  (on every push to main)
+                                                v             v
+                                        GitHub Pages     GitHub Action
+                                        github.io        neocities.yml
+                                        mirror                |
+                                                              |  1. build the log (scripts/build_log.py)
+                                                              |  2. bot commits the rebuilt files back to main
+                                                              |  3. copy site files into dist/
+                                                              |  4. upload dist/ to Neocities
+                                                              v
+                                                         Neocities  -&gt;  your domain
+
+++++++ S3 bucket (images, audio, textures) is not in the repo; every page links to it by address.+++++++++
+
+♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬ ｡･:*:･ﾟ✧･ﾟ:*:･｡ ♬
+</code></pre>
+<blockquote>
+<p>All arrows point one way.<br>
+The only arrow that flows to the repo is the bot’s commit in step 2, that pushes to the GitHub repo (branch main)<br>
+from ur local directory, and not into the local directory (see section 4).</p><br>
+	
+</blockquote>
+<h2 id="the-pieces">2. The pieces</h2>
+<pre class="scroll-container"><code class="scroll-container">
+★-| Piece                                        | Runs where                     | Starts when                                      | What it does.
+
+★-| Git + Git Bash                               | your PC                        | you type a command                               | Tracks changes; sends them to GitHub and fetches them back.
+★-| GitHub repo                                  | github.com                     | --------                                         | Stores every file and the full history.
+★-| GitHub Pages                                 | GitHub                         | `main` changes                                   | Publishes the repo's top folder at the github.io address.
+★-| Workflow `.github/workflows/neocities.yml`   | GitHub's servers               | any push to `main`, or the "Run workflow" button | Builds the log, commits it back, deploys to Neocities.
+★-| `scripts/build_log.py`                       | inside the workflow (Python 3) | step 1 of the workflow                           | Rebuilds the log from `log-entries/`.                     
+★-| `js/site.js`, `js/lang-pt.js`, `js/hit.js`   | the visitor's browser          | page load                                        | Theme and language buttons, Portuguese text, click areas. Not part of any pipeline.
+</code ></pre>
+<h3 id="what-the-workflow-does-step-by-step">What the workflow does, step by step</h3>
+<ol>
+<li><strong>Checkout.</strong> Gets the repo’s files.</li>
+<li><strong>Build log</strong> (<code>python3 scripts/build_log.py</code>, marked <code>continue-on-error</code>).
+<ul>
+<li>Reads every <code>.md</code> / <code>.txt</code> note in <code>log-entries/</code>, newest first.</li>
+<li>Rewrites what sits between <code>&lt;!-- LOG:START --&gt;</code> and <code>&lt;!-- LOG:END --&gt;</code> in <code>sitemap.html</code>.</li>
+<li>Rewrites what sits between <code>/* LOG:START */</code> and <code>/* LOG:END */</code> in <code>js/lang-pt.js</code>.</li>
+<li>sets the footer “Last updated” date on every page to today (Belo Horizonte time) <strong>Only if the log changed,</strong></li>
+<li>Running it twice changes nothing the second time.</li>
+<li>If it fails, the error shows as red under Annotations and the deploy still happens.</li>
+</ul>
+</li>
+<li><strong>Commit rebuilt files.</strong> Stages <code>*.html</code> and <code>js/lang-pt.js</code>. If anything changed, it<br>
+commits as <code>github-actions[bot]</code> with the message <code>Rebuild log from log-entries [skip ci]</code>,<br>
+runs <code>git pull --rebase</code>, and pushes to <code>main</code>. A commit made this way does not start<br>
+another run, which is why the deploy happens in the same run.</li>
+<li><strong>Collect site files</strong> into a temporary <code>dist/</code> folder: <code>index.html</code>, <code>sitemap.html</code>,<br>
+<code>wiki.html</code>, <code>css/style.css</code>, <code>js/site.js</code>, <code>js/hit.js</code>, <code>js/lang-pt.js</code>, <code>sonoro/</code>,<br>
+<code>masks/</code>, and <code>robots.txt</code> if it exists.</li>
+<li><strong>Deploy to Neocities</strong> with the stored secret <code>NEOCITIES_API_TOKEN</code>, <code>cleanup: false</code>.</li><br>
+</ol>
+<h3 id="what-is-not-deployed-to-neocities">What is not deployed to Neocities</h3>
+<p><code>scripts/</code>, <code>log-entries/</code>, <code>.github/</code>, <code>.gitignore</code>, <code>list of git commands.txt</code>,<br>
+<code>images/</code>, the unused Bootstrap files, and this sheet.</p><br>
+	  
+<h3 id="the-note-format-for-log-entries">The note format (for <code>log-entries/</code>)</h3>
+<p>File name: <code>YYYY-MM-DD-short-slug.txt</code> (or <code>.md</code>), for example <code>2026-10-19-first-note.txt</code>.</p>
+<p>Short title</p>
+<p>English paragraph. Links work like <a href="https://example.com">this</a>.</p>
+<p>Another English paragraph.</p>
+<p>—pt—<br>
+Titulo curto</p>
+<p>Paragrafo em portugues. Links: <a href="https://example.com">isto</a>.</p>
+<p>Outro paragrafo em portugues.</p>
+<ul>
+<li>The Portuguese part is optional. Anything missing stays in English.</li>
+<li>A file whose name does not look like <code>YYYY-MM-DD-slug.md/.txt</code> is skipped with a yellow<br>
+warning (this includes <code>.gitkeep.txt</code>).</li>
+</ul>
+<blockquote>
+<p>Never edit between the <code>LOG:START</code> / <code>LOG:END</code> markers by hand. The next build overwrites it.</p>
+</blockquote>
+<pre class="scroll-container"><code class="scroll-container">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣦⣲⣪⣺⣪⣺⣢⣠⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⠺⠺⡺⡺⣾⣺⣾⣻⣲⣢⡀⠂⠀⠺⡢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⣨⣾⣺⣾⣺⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⡊⠀⡠⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⠀⠀⣠⣾⣺⡾⠚⠺⣺⣾⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⣠⡲⠂⠀⠀⠀⣀⣲⣾⣻⡾⠋⠀⠀⠀⠈⣺⣺⣦⡀⠀⡀⠀⣺⣦⠀⠀⠀⠢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⡺⠂⠀⠀⠀⠂⠀⠀⠀⣠⣲⣾⡻⡺⠋⠀⠀⠀⠀⠀⠀⠨⣻⣾⡆⡀⡂⣸⣻⣾⣢⡀⠀⠀⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡚⠂⠀⠀⠀⠀⠀⠀⠀⠀⡺⡾⠛⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣾⣿⡂⠠⣺⣻⣾⣻⡂⠀⠀⠀⡠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣿⡆⠈⣾⣻⣾⣻⣦⡀⡀⠀⡀⣢⡀⡀⡀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠠⡚⡀⠀⣀⡀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⠃⠀⣺⣿⣾⣿⣾⡂⡠⠂⠂⠊⣢⠀⡀⡢⡂⠀⡀⠀⡀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣀⡺⡢⣾⣿⡂⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣀⣀⣀⣠⣠⣠⣀⣀⡀⡀⠀⠀⠀⢨⣿⣾⣻⣾⡂⠀⠀⠀⠀⡪⡂⡠⡂⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣨⣾⡂⠻⣿⡆⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣾⣺⣾⣺⣾⣻⣾⣻⣾⣻⣾⣺⣦⣦⣾⣻⣾⣻⡾⠂⠀⠀⠀⠀⣠⣺⡂⠀⡀⠀⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠺⠂⠀⠸⡏⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠊⠚⠻⡺⡻⣾⣺⣾⣺⣾⣻⣾⣻⣾⣻⣾⣻⡂⠀⡀⠂⡢⠂⡺⡻⡾⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠈⠈⠊⠛⣺⣻⣾⣻⣾⡋⠀⠀⠀⠀⠀⠀⠀⠀⣢⡂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣲⡢⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣻⣾⣻⡾⠂⠀⠀⠀⠀⠀⠀⠀⠀⡨⡂⡀⠀⡀⠀⠀⠀⠀⠀⠀⣀⣾⣿⣾⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣺⣻⣾⣻⣾⡻⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡢⣢⡺⣪⡂⠀⠀⠀⠀⣠⣺⣾⣻⣾⣿⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣺⣾⣻⣾⡛⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡪⣺⡪⠊⠊⠀⠀⠀⠀⣺⣾⣻⣾⣻⣾⡋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣻⣾⡿⠂⠀⡀⠀⠀⠀⠀⠺⣾⣲⣦⣢⣀⡀⡀⠈⡂⠀⠀⠀⠀⠀⣸⣻⣾⣻⣾⣻⡮⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠛⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣻⣾⣻⣾⣻⣦⣢⡂⠀⠀⠀⠀⢠⣾⣻⣾⣺⣾⡿⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣻⣾⣺⣾⣻⣾⣲⣤⡀⠀⣺⣾⣺⣾⣺⡾⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣻⣾⣺⣾⣻⣾⣻⣾⣻⣾⣺⣾⡛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⡢⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⡻⣾⣿⣾⣺⣾⣺⣺⣺⣾⣢⣦⣠⣀⡀⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡪⠈⠊⠛⠺⣺⣾⣺⣾⣺⣾⣺⣾⣻⣾⣺⣶⣲⣦⣢⣀⡀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣢⣠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⠈⠺⣾⣺⣾⣺⣾⣺⣾⣺⣺⣺⣺⣺⣺⣺⣢⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⣺⣪⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⠀⡠⠂⠀⠀⠀⠀⠀⠈⠈⠛⠺⠺⠺⠺⡾⠺⡺⠺⠺⠚⠊⠊
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣾⡦⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⣺⣪⡺⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⡺⣪⡺⣪⣲⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⣺⣪⣺⣪⣺⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠨⣺⣪⡺⣪⣺⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣪⡀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣪⡪⣪⣺⡂⠀⠀⠀⠀⣀⣠⣠⣢⣺⣺⣺⣾⣺⣪⡺⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣠⣠⣠⣠⣠⣠⣠⣠⣀⡀⡀⡀⡀⠈⣪⡺⣪⣺⣪⣀⣠⣲⣺⣺⣪⡺⣺⣺⣺⣺⡺⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⡪⣺⣪⡺⣪⡺⣪⡺⣪⣺⣪⡺⣢⣺⣪⣺⣪⣺⣺⣺⣪⡺⣪⣺⣪⣺⣪⡺⡪⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠊⠺⣪⣺⣪⣺⣪⣺⣪⡪⣪⣺⣪⣺⣪⣺⣪⣺⣪⣺⣺⣺⡺⠚⣪⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠈⠚⠺⠺⡪⡺⡪⠺⠺⠚⠊⠪⠈⠈⠈⠈⠈⠀⠀⡠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⡠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣾⣲⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⠀⡀⣠⣢⡂⠠⡀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣺⡢⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣺⣺⣺⣺⣦⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣢⣺⣺⣺⡂⠀⡂⡀⣂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣾⣺⣺⣺⣢⣂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣺⣪⡺⣪⣺⡺⠀⠀⠀⠺⡺⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠺⣺⣺⣺⣪⣺⣲⡂⠀⠀⠀⠀⠀⠀⢀⣰⣺⣺⣪⣺⣪⡺⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠘⣺⣺⣪⣺⣪⣺⣢⠀⠀⠀⠀⣠⣺⣺⣺⣺⣺⣺⡊⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⠀⢠⣠⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣺⣺⣪⣺⣺⣢⡀⣀⣺⣺⣪⣺⣪⣺⡾⠊⠀⠀⠀⠀⡠⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠈⣪⡺⣢⣂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣪⣺⣪⡺⣪⡺⣪⣺⣪⣺⡺⠊⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⣪⣺⣪⡺⣢⣂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠈⣺⣪⡺⣪⣺⣪⣺⡺⠊⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⡀⡂⠀⠀⠀⣺⣪⡪⣪⣺⣢⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣪⣺⣂⣠⣺⣺⣪⣺⣪⡺⡊⠀⠀⠀⠀⠀⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠈⣪⡺⣪⡺⣪⣺⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣺⣺⣺⣺⣪⡺⣪⣺⣪⡺⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠨⣺⣪⡺⣪⡺⣪⣢⡀⠀⠀⠀⠀⠀⣀⣢⣺⣺⣪⣺⣪⡺⣪⣺⣪⡺⠊⠀⠀⠀⠀⠀⡀⠀⠀⠀⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⠀⠀⠀⠀⠀⠈⣪⣺⣪⡪⣪⣺⡆⠀⠀⠀⠀⣠⣺⡺⣪⣺⣺⣺⣪⣺⡪⠚⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣲⡦⠀⠀⠂⠀⠀⠀⠀⠀⠀⠈⠺⣪⡺⣪⡺⣺⡀⠀⣀⣺⣺⣪⣺⣺⣺⡺⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡺⣾⡺⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣪⡪⣪⡺⣢⡺⣪⡪⣪⣺⡪⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣪⡺⣪⡺⣪⡪⣪⡺⡪⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡠⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣠⣢⣢⡺⣪⡺⣪⡺⣪⡪⡪⡚⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⡂⡀⡀⠂⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣠⣺⣪⡺⣪⡺⣪⡪⣪⡪⣪⡪⡪⠊⠀⠀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡪⡢⡀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣲⣪⡺⣪⣪⣪⣪⣪⣺⣪⣺⣪⡺⠊⠊⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⠂⠀⠢⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⠪⠺⡪⠺⠪⠺⠊⠚⠊⠊⠊⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⠀⠀⡠⠂⠀⠀⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⠀⠀⡀⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡢⠀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠺⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ 
+
+⠀⠀⠀⠀⠂⠒⠂⠢⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣢⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠂⠀⠈⠀⠂⠢⡀⣨⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡠⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡀⠀⡊⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡀⡂⣢⣦⣦⣢⣢⡢⡠⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣠⣪⣪⣾⣿⣪⣨⣿⣾⣺⣾⣪⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣠⣺⣾⣾⣿⣿⣿⣿⣿⣮⣺⣾⣿⣦⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠠⣺⣾⣿⣿⣿⣾⣻⣿⣿⣪⣺⣾⣿⣿⡢⣢⣢⣢⣢⣠⡀⠀⠀⠀⠀⠀⠀⡠⡂⣢⣢⣢⣢⣢⡢⣢⡂⡀⡀⠀⠀⠀⠀⠀
+⠨⣻⣿⣿⣿⣿⣾⣿⣿⣻⣾⣺⣾⣿⣾⣺⣾⣺⣾⣺⣾⣾⡂⠀⠀⠀⣠⣺⣪⣺⣾⣺⣾⣺⣪⣺⣺⣺⣮⣢⡢⡀⠀⠀⠀
+⠀⣻⣿⣿⣿⣿⣿⣿⣾⣿⣾⣿⣿⣿⣾⣾⣾⣿⣾⣺⣾⣿⣮⡂⢠⣺⣾⣾⣾⣿⣾⣻⣾⣺⣪⣺⣺⣺⣾⣿⣮⡢⡂⠀⠀
+⠀⠈⣺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣾⣿⣿⣿⣾⣿⣾⣿⣿⣲⣺⣾⣾⣿⣿⣿⣾⣿⣾⣺⣾⣺⣾⣺⣾⣿⣿⣾⣢⡂⠀
+⠀⠀⠀⠊⠺⡻⣿⡻⡿⡻⠊⣪⣾⣾⣾⣿⣿⣿⣿⣿⣾⣾⣾⡾⣾⣿⣾⣿⣿⣿⣿⣿⣾⣿⣾⣻⣾⣿⣾⣿⣿⣿⣾⡪⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⡿⣋⣺⣾⣻⣾⣿⣻⣻⣫⣾⣾⣿⣾⣿⣾⣾⣾⣿⣾⣿⣾⣿⣾⣿⣾⣿⣿⣿⣿⣿⣾⣺⡂
+⠀⠀⠀⠀⠀⠀⢀⣰⡾⠋⠀⣰⣾⠋⣸⣿⠈⠛⠊⠛⠊⢪⣮⠊⣺⣿⣿⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣺⡂
+⠀⠀⠀⠀⠀⣠⣾⠋⠀⣠⣾⡿⠂⠀⣺⣿⠀⠀⠀⠀⠀⠸⣿⡀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣺⡂
+⠀⠀⠀⠀⣾⡿⠂⠀⣠⣾⡾⠂⠀⠀⢸⡋⠀⠀⠀⠀⠀⠈⣫⠀⠸⣿⣿⣺⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣻⣾⡺⠀
+⠀⠀⣠⣾⡋⠀⠀⣸⣾⡛⠀⠀⠀⠀⣸⣯⠀⠀⠀⠀⠀⠀⣺⡂⠀⣺⡆⠈⠊⠺⣺⣻⣿⣻⣿⣿⣾⣻⣾⡻⡺⠚⠊⠀⠀
+⠀⣠⣾⡋⠀⣠⣾⡿⠂⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⢸⡆⠀⣺⣿⠀⠀⠀⠀⠈⠈⠈⢺⣿⡎⠈⠀⠀⠀⠀⠀⠀⠀
+⠀⠺⠋⠀⣰⣿⣿⠃⠀⠀⠀⠀⠀⠀⠈⠋⠀⠀⠀⠀⠀⠀⠀⠋⠀⣺⣿⡂⠀⠀⠀⠀⠀⠀⠨⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⡿⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⡆⠀⠀⠀⠀⠀⠀⠀⣻⣿⡂⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠃⠀⠀⠀⠀⠀⠀⠀⠈⠻⠋⠀⠀⠀⠀⠀⠀⠀
+</code></pre>
+<h2 id="which-route-do-i-use--╹--╹">3. Which route do I use? 
+<br>
+( ╹ -╹)?</h2>
+<pre class="scroll-container"><code class="scroll-container">
+★-| I want to...                                | Use                                             | Notes.
+
+★-| Add, fix or delete a log entry              | **A1** (GitHub) or **B5** (notes from Git Bash) | The build does the rest.
+★-| Fix a typo or change a page                 | **B** (local) or **A2** (GitHub)                | Update the page's footer date yourself.
+★-| Change CSS, JS or masks                     | **B** (local)                                   | Test locally first.
+★-| Add several things at once                  | **B**                                           | One commit, one deploy.
+★-| Change something in the Neocities dashboard | **Avoid.** See **C**                            | Im tryna tell yall stay away from this! lol.
+
+</code></pre>
+<h2 id="route-a---commit-directly-on-github-website-or-phone">4. Route A - commit directly on GitHub (website or phone)</h2>
+<h3 id="a1.-add-edit-or-delete-a-log-note">A1. Add, edit or delete a log note</h3>
+<ol>
+<li>On the repo page open <code>log-entries/</code> (type <code>log-entries/</code> in the file name when creating<br>
+a file if the folder is gone; GitHub creates it).</li>
+<li>Create a new file named like <code>2026-10-19-my-note.txt</code>, or open an existing one.</li>
+<li>Write the note in the format above.</li>
+<li>Commit <strong>directly to the <code>main</code> branch</strong> (not “create a new branch”).</li>
+</ol>
+<p>What happens next, in about a minute:</p>
+<ol>
+<li>The workflow starts.</li>
+<li>The build script rewrites the log in <code>sitemap.html</code> and <code>js/lang-pt.js</code>, and sets every<br>
+page’s footer date.</li>
+<li>The bot commits those files back to <code>main</code>.</li>
+<li>The site files are uploaded to Neocities.</li>
+<li>GitHub Pages republishes <code>main</code>.</li>
+</ol>
+<p>To delete an entry, delete the note file and commit. The log rebuilds without it.</p>
+<h3 id="a2.-edit-any-other-file-on-github">A2. Edit any other file on GitHub</h3>
+<p>Open the file, change it, commit to <code>main</code>. The workflow script runs the build<br>
+step finds nothing to change; the deploy uploads the changed files.<br>
+Footer dates do <strong>not</strong> change by themselves for ordinary page edits - edit the date in the<br>
+footer in the same commit.</p>
+<h3 id="after-any-route-a-commit">After any Route A commit</h3>
+<ul>
+<li><strong>Your local folder is now behind GitHub.</strong> The bot adds a commit too.</li>
+<li>Before you edit anything locally, run <code>git pull</code>.</li>
+<li>Check the <strong>Actions</strong> tab: a green check means it deployed.</li>
+</ul>
+<h2 id="route-b---commit-from-git-bash-in-your-local-pecweb-folder">5. Route B - commit from Git Bash in your local <code>pecweb</code> folder</h2>
+<h3 id="b0.-start-of-every-session">B0. Start of every session</h3>
+<pre class="scroll-container"><code class="scroll-container">
+cd "/path/to/pecweb"    - alternatively you can type "cd " and drag your root folder in as well.
+                        - if you're on Windows you can also right click in your root folder and launch Git Bash from there.
+git status -sb          # shows "behind N" if GitHub has newer commits.
+git pull                # bring them down BEFORE you edit anything.
+</code></pre>
+<h3 id="b1.-the-standard-flow">B1. The standard flow</h3>
+<pre class="scroll-container"><code class="scroll-container">git pull                           # 1. latest from GitHub first
+                                   # 2. edit your files
+git status                         # 3. see what changed
+git add .                          # 4. stage everything
+git commit -m "what I changed"     # 5. snapshot with a note
+git push                           # 6. upload; both sites update
+</code></pre>
+<p>If you edited a page, update its footer date in the same commit.</p>
+<h3 id="b2.-what-happens-after-your-push">B2. What happens after your push</h3>
+<ol>
+<li>GitHub receives the commit and starts the workflow.</li>
+<li>The build step runs. If you did not touch <code>log-entries/</code>, it changes nothing.</li>
+<li>The deploy uploads your changed files to Neocities. GitHub Pages republishes.</li>
+<li>If the build did change something (you added a note), the bot makes a new commit on<br>
+GitHub. <strong>Your local folder is behind again; <code>git pull</code> before your next edit.</strong></li>
+</ol>
+<h3 id="b3.-git-pull-refuses-your-local-changes-would-be-overwritten">B3. <code>git pull</code> refuses: “Your local changes would be overwritten”</h3>
+<p>Git is protecting your uncommitted edits to a file that GitHub also changed.</p>
+<pre class="scroll-container"><code class="scroll-container">
+Pull blocked
+ |
+ +-- The listed files are edits you MADE ON PURPOSE and want to keep
+ |      git add &lt;files&gt;
+ |      git commit -m "my edits"
+ |      git pull            (if Git reports a conflict, see below)
+ |
+ +-- The listed files are unwanted or damaged local changes
+ |      cp &lt;file&gt; ../&lt;file&gt;.backup      (safety copy first)
+ |      git restore &lt;file&gt;
+ |      git pull
+ |
+ +-- Not sure
+        git diff &lt;file&gt;                 (read the changes)
+        or:  git stash  -&gt;  git pull  -&gt;  git stash pop
+</code ></pre>
+<p>A conflict looks like <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code> … <code>=======</code> … <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> inside a file.<br>
+Open the file,<br>
+keep the version you want, delete the three marker lines,<br>
+then <code>git add .</code> and <code>git commit</code>.</p>
+<h3 id="b4.-git-push-is-rejected-fetch-first--remote-contains-work-you-do-not-have">B4. <code>git push</code> is rejected (“fetch first” / “remote contains work you do not have”)</h3>
+<p>GitHub has a newer commit than you (often the bot’s).<br>
+Run <code>git pull</code>, then <code>git push</code> again.<br>
+If an editor window opens asking for a merge message, save and close it.</p>
+<h3 id="b5.-notes-from-git-bash-batch">B5. Notes from Git Bash (batch)</h3>
+<p>Save your note files into <code>log-entries/</code> with the right names, then:</p>
+<pre><code>git pull
+git status
+git add .
+git commit -m "notes"
+git push
+</code></pre>
+<p>All the notes in that commit publish together; the log is rebuilt once. You do not need to run<br>
+<code>build_log.py</code> yourself.</p>
+<h3 id="local-only-habits">Local-only habits</h3>
+<ul>
+<li>Edit <code>js/lang-pt.js</code> only in an editor set to <strong>UTF-8 without BOM</strong>. Saving it as ANSI turns<br>
+the symbols into <code>?</code> and breaks the Portuguese text.</li>
+<li>If you run <code>python3 scripts/build_log.py</code> locally to test, it edits <code>sitemap.html</code>,<br>
+<code>js/lang-pt.js</code> and footer dates. The bot will make the same edits on GitHub, so do not<br>
+commit local build results unless you mean to.</li>
+</ul>
+<h2 id="route-c---edit-directly-on-neocities">6. Route C - edit directly on Neocities</h2>
+<p><strong>There is no pipeline from Neocities back to GitHub.</strong> None has been written. Anything you<br>
+change in the Neocities dashboard or upload there exists only on Neocities.</p>
+<p>What can happen to a hand edit on Neocities :</p>
+<pre class="scroll-container"><code class="scroll-container">
+★-| What you did on Neocities                    | What happens at the next deploy 
+
+★-| Edited a file that the workflow deploys      | It can be **overwritten** by the repo's version, because the deploy action re-uploads files whose contents differ.
+★-| Uploaded a file the workflow does not deploy | It stays, because `cleanup` is `false`.
+★-| Deleted a file that the workflow deploys     | It is re-uploaded at the next deploy.
+</code></pre>
+<p>If you did edit something on Neocities and want to keep it:</p>
+<ol>
+<li>Download or copy the file’s content from Neocities.</li>
+<li>Put it into the same path in your local <code>pecweb</code> folder.</li>
+<li><code>git pull</code>, <code>git add .</code>, <code>git commit</code>, <code>git push</code> (Route B).</li>
+</ol>
+<blockquote>
+<p><strong>avoid editing deployed files on Neocities directly.</strong> Preferably Use Routes A or B.</p>
+</blockquote>
+<h2 id="bring-your-local-folder-in-line-with-github-one-time">7. Bring your local folder in line with GitHub (one time)</h2>
+<p>Use this when GitHub is the version you want and your local copy is behind or damaged.</p>
+<pre class="scroll-container"><code class="scroll-container">
+cd "/path/to/pecweb"
+git status -sb                       # what differs right now
+git diff &gt; ../local-changes.patch    # safety copy of uncommitted edits to tracked files
+git fetch origin                     # download GitHub's latest; touches none of your files
+git reset --hard origin/main         # tracked files become identical to GitHub
+git status -sb                       # expect:  ## main...origin/main  and nothing else
+</code></pre>
+<ul>
+<li><code>git reset --hard</code> <strong>discards uncommitted edits to tracked files.</strong> That is why the patch is<br>
+saved first. If there is a file you made only locally and want to keep, copy it out first.</li>
+<li>It does not touch untracked or ignored files (audio, <code>.psd</code>, <code>_notes/</code>).</li>
+<li>Any <code>??</code> lines left in <code>git status</code> are untracked files. Delete them or ignore them.</li>
+<li>Gentler alternative: <code>git restore &lt;file&gt;</code> on the specific files, then <code>git pull</code>.</li>
+</ul>
+<pre class="scroll-container"><code class="scroll-container">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡂⡢⡂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⡀⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡪⣢⣢⡂⡂⠀⡀⠀⡀⠀⠀⡂⡀⠀⠀⠀⠀⣪⡂⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡺⣺⡪⡂⡀⡂⠂⡀⠀⡀⠂⡀⡂⡀⡀⡠⡺⣪⡂⠀⠀⠀⠀⡀⡀⡀⡀⡀⣀⣠⣲⣶⣶⡦⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⡀⠀⡠⡢⡢⡂⡀⠀⠀⠀⠀⠀⡠⡢⡀⠀⠀⠂⡂⡂⡪⡺⣢⡂⡀⠀⠂⡂⡀⠀⡠⡂⣠⡺⡂⣪⡊⡢⡢⡀⡀⣢⣢⣾⣾⣾⣾⣿⣿⣿⣿⡻⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⣺⡺⡂⡊⡊⠀⡀⡀⡢⡢⡂⡀⡢⠊⣢⡢⡂⠀⡠⠂⣢⡪⣢⡊⡊⡪⡂⠀⡀⡂⡀⡊⣢⣲⡾⡻⣪⡺⡂⡂⣢⣺⣾⣻⣾⣿⣿⣿⣾⣿⣾⣿⡪⠂⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⡀⠀⡀⠪⣺⡊⡢⡊⡀⠀⡀⠈⡂⠀⠀⠪⣢⡀⡪⡪⡀⡂⣠⡢⡊⡊⡊⡢⡢⡪⡪⡂⡠⡂⡢⣢⣾⡪⣠⣺⣺⡪⣺⣾⣾⣿⣿⣿⣾⣿⣿⣿⣾⣿⣿⣿⣪⡢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⡀⠀⡀⡺⣮⡪⡪⡊⡀⠀⠀⠀⠠⡢⡀⠀⡨⡺⣢⡊⡀⡪⣪⡂⠀⡚⡂⡪⡢⡂⣢⣾⣾⣢⣢⣾⣿⣾⣪⡪⡪⡪⡪⡺⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣢⣢⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠂⡀⡂⡀⣪⣾⣪⡂⠂⠂⣢⡀⠀⠀⠂⣢⡂⡀⣪⣺⡂⡢⡺⡢⠂⡢⡊⡺⡊⡢⡂⣺⣿⣿⣿⣾⣿⣿⡻⡪⡪⣪⡪⡢⣺⣾⣿⣾⣿⣿⣿⣿⣻⣾⣿⣾⣿⣾⣺⡪⠂⡀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⡀⡂⡀⠂⣢⣺⣪⡊⡂⡂⡀⠪⡺⡢⡀⠀⠈⡪⣢⡊⡪⡂⡠⡂⡀⣀⣢⣢⡂⠀⡀⠀⡈⠺⣿⣿⣿⣿⡿⠂⡀⡊⡪⡊⣢⣺⣿⣿⣾⡻⣪⣺⣾⣿⣿⣿⣿⣿⡢⡺⡢⠀⡀⠀⣠⡂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡂⡀⡪⡂⠂⡪⡚⣪⣪⡢⡊⡢⣂⡠⡂⡀⡂⡀⠊⣪⡂⡢⡊⡢⡂⣢⣺⣿⣿⣦⣢⡀⡂⡀⡀⣺⣿⣿⣿⡢⡂⣠⣪⣢⣪⣺⡻⡪⡺⡪⡊⣢⣺⣿⣿⣿⣿⣿⡻⡢⡺⡂⠀⠀⡲⣾⡂⡀⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡂⡀⡂⡢⡂⣠⡀⡀⠚⣪⡢⣢⡈⡺⡺⡂⠀⠀⠀⠀⡂⡀⠂⡂⠂⣪⣻⣾⣻⣿⣿⣾⡢⡂⡺⣺⣿⣿⡫⡂⠂⣺⣿⣾⣿⣿⡢⡂⠂⡠⡺⡪⡺⣺⣺⣾⣿⣾⡺⡂⡂⡀⠀⠀⣨⣮⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠊⡂⡊⣨⡢⣢⡂⡀⡊⡪⡢⣢⡀⠀⡂⡀⠂⡀⡀⡀⠀⡀⠀⣺⣾⣾⣻⣿⣻⣮⣺⣢⡂⡪⣺⣿⡂⡀⠀⣺⣿⣿⣿⣿⣿⣢⡂⡀⡀⡢⡺⣺⣻⣾⣿⣯⡂⡂⠂⠀⣠⣢⡊⡢⡂⠀⠀⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⡀⠀⠀⠀⡀⡀⡀⡀⡈⠊⠂⡺⣺⣾⣾⡺⡢⡀⡂⡂⡀⠂⡂⡂⡀⠊⠪⡻⣾⡻⡾⠊⡪⡺⣾⡂⡀⡺⣿⡂⡀⡂⡂⡺⣺⡪⣪⣻⣮⡂⡂⠊⡢⡪⡪⡻⣾⣻⡪⡂⡠⡂⣢⡺⡊⡪⡪⡂⡠⡢⡂⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠂⡢⡂⡠⡂⡂⡪⡢⡢⡢⡂⡪⣺⣪⡊⡪⡪⡂⡊⡢⡂⡀⠂⡀⠂⡀⠂⡀⡂⡀⠂⡀⡪⣪⣺⣢⣺⣾⡂⡀⡀⣢⣺⣮⣺⣾⣿⣿⡮⡀⠂⡀⡪⣾⡺⣺⣺⣪⣢⣾⡺⣪⡺⡊⠂⡠⡪⡂⡂⡀⠊⠂⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡂⠂⡂⡊⣢⡊⣪⡪⣪⣺⣦⣪⡪⡪⡪⡊⡢⡂⡀⡂⡀⡢⡢⡂⡀⡂⡀⡂⡢⡂⡢⡂⡀⡪⣪⣺⣺⣾⣾⣿⡢⡪⣺⡊⡀⡺⣿⣿⣿⣿⡂⡂⡀⡪⡢⡪⡪⣺⣪⡺⡺⡊⡪⣪⣢⡺⡪⡊⡢⡊⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⡀⠀⡠⡂⡈⠊⡊⡊⡊⡚⣊⣺⣪⣺⡪⡊⡢⡂⡂⠂⡀⡊⡂⡊⡢⠂⡂⡂⡂⡂⡢⡪⡢⡪⡪⡺⣪⣿⣾⣿⣿⣿⡢⠊⡀⠂⡀⠂⡪⡻⡻⡋⡂⡂⣠⡂⡀⠊⡪⡊⣢⣾⣾⡺⡺⡊⡂⡂⡀⠀⡀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡀⣠⣢⣢⣢⣢⣲⣦⣾⣾⣾⣾⣺⣾⣿⣾⡪⡪⡪⡢⡂⡂⡂⡀⡂⡀⡂⡀⡂⡀⡂⡢⡂⣢⡪⡪⡢⡢⡪⣾⣿⣿⣿⣿⣿⣢⡂⡀⡀⡀⡂⡀⠂⡀⣢⣶⣾⣿⣿⡦⠂⡀⠂⠊⠊⡀⡀⡀⡀⡀⡂⡀⡀⡀⡂⡢⡂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡀⣀⣠⣦⣺⣾⣾⣿⣿⣿⣿⣾⣿⣿⣿⣾⣿⣾⣿⣾⣻⡻⡪⡢⡢⡢⡢⡢⡂⡢⡂⡀⡂⡢⡢⡢⡂⣢⡺⣪⡪⡪⡊⣪⡪⣪⣻⣿⡻⡿⡻⣾⡢⣢⡺⡺⡺⣢⡪⣢⣺⣾⣿⡾⡋⡀⠂⡀⡀⡀⡂⡀⡂⡀⡀⡀⡀⡀⠀⠀⠀⡀⡀⡀⡀⡀⡀⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣠⣢⣶⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣾⣾⣦⣪⣢⡪⡢⡂⡂⡊⡢⡊⡪⡊⡢⡊⡂⡂⡪⡪⡪⡊⡢⡪⣪⡪⡪⡺⡢⡊⡀⠊⣺⣿⣮⡪⣢⣺⣾⣾⣮⣾⣾⡋⡂⠀⡀⠂⡀⠂⡀⡂⡂⡊⡊⡊⡊⡲⡢⡢⡀⡀⡀⠂⡠⡊⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠺⡻⡿⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣾⣿⣿⣿⣿⣻⣿⣻⣿⣻⣪⡪⡪⡊⡪⡪⡢⡊⡢⡪⣢⡂⡠⡂⡢⡂⣢⡪⡂⡊⡢⡪⣺⣺⡪⡪⡢⡂⡀⡂⣪⣿⣿⣾⡪⡺⣿⣿⣿⡋⡂⠀⡀⡀⡀⠂⡀⡂⡀⡊⡪⣊⡊⡊⡂⡪⡢⡂⡪⣺⣦⡢⣢⡂⡂⠂⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠊⠺⡻⣾⡿⣿⣿⣿⡻⡪⡺⣾⡻⣾⣻⣾⡾⣮⡺⡪⡊⡪⡚⡢⡊⡢⡪⡢⡪⡢⡪⡢⡂⡂⡊⣪⡺⣪⡪⡢⡪⣺⡻⣢⡪⣪⡢⡂⡂⣪⣿⣿⣿⣾⣦⡈⠊⡀⠀⡀⡂⡀⠂⡀⡂⡀⡂⡢⡊⣢⡺⡪⡪⣢⡂⡀⡊⡊⡺⡺⣺⣾⡻⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣪⣺⡾⠊⡀⡀⡀⠀⠀⠀⡀⡊⠈⠀⡀⠀⣠⣺⡺⡺⣪⡪⡪⡊⡢⡪⡢⡪⡢⡢⡢⡂⡂⡊⡪⡪⡢⡊⡪⡪⡪⡪⡪⡊⡢⡂⣪⣿⣿⣿⣿⣿⣿⣦⡢⠀⡀⠂⡀⠂⡀⡂⡀⡢⡪⡪⣪⣺⣺⡺⣪⣺⣪⣺⣾⣾⡾⡺⡪⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡀⡺⡺⣻⣢⣢⡢⠺⣶⣢⣠⣢⣠⣢⣢⣢⣦⣺⣾⡺⣪⡢⣪⣪⣦⣾⣾⡊⡪⡊⡠⡂⡢⡂⡢⡂⡢⡊⡪⡪⣢⡢⣢⡪⡢⡪⣢⣺⣾⣿⣿⣿⣿⣿⣿⣿⡊⠂⡀⡂⡀⡂⡂⡊⡪⣺⣪⣺⣺⣻⣾⣮⣮⣺⣾⡋⡪⡪⡢⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡀⡂⡢⡊⡊⠊⠀⠀⠀⠈⡪⡻⣻⣻⣾⣿⣿⣿⣾⣾⣾⣿⣿⣻⣪⡪⡢⡪⡪⡂⡂⡂⡀⡂⡀⠂⡢⡂⡢⡊⡊⡊⡪⡪⡪⡊⡢⡊⡪⡻⣿⡻⡊⡊⡊⠂⡀⡂⡢⣢⡢⡊⡢⡺⣢⣪⣺⣺⣾⣿⣾⣾⣺⣻⣾⣺⣦⡪⡂⡀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⠀⠀⡀⠀⠀⠀⡀⠀⣠⣺⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⡻⡢⡂⡀⡂⡀⡂⡂⠂⡂⡂⡀⡀⡀⡂⡂⡂⡢⡂⡠⡊⡀⡂⡂⡂⡢⡂⡀⡂⡀⠂⡀⡂⡀⠂⣢⡪⣪⡺⣪⣢⣪⣺⣺⣺⣿⣿⣿⣿⣾⣿⣿⣿⣮⣺⣾⣶⣢⣢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⡀⣢⣢⣾⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣾⣺⣪⡂⡢⡂⡢⡊⡢⡂⡂⡂⡢⡂⡢⡂⡂⡂⡀⡂⡀⡂⡢⡊⡂⡂⡠⡂⡂⡂⡂⡂⡀⡂⡢⡢⡂⡊⡢⡊⡪⡻⣾⣺⣾⣺⣾⣿⣿⣿⣿⣿⣾⣿⣿⣿⣾⣿⣾⣿⣾⣦⣢⡀⡀⠂⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣢⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣾⣿⣿⣺⣾⣺⣪⡪⡂⡂⡢⡂⡢⠂⡠⡪⡢⡪⡂⡂⡀⠂⡀⠂⡢⡊⡢⡂⡂⡂⡢⡂⡠⡂⡀⠂⡀⠂⡀⠂⡂⠊⡢⡺⣾⣾⣪⣺⣺⣿⣾⡻⣺⣻⣾⣻⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣶⣦⡀⠀⡀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣺⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⡾⡻⣻⣻⣾⣿⣿⣿⣿⣿⣮⣺⣮⣺⡪⡊⡂⡢⡢⡢⡪⡊⡠⡂⡀⡂⡀⡂⡢⡂⡢⡪⡂⡊⡂⡢⣢⡢⣢⡂⡀⡂⡂⠀⠀⠀⣢⡀⠈⡺⡊⡺⣪⡚⡻⣻⡮⡺⡺⣺⣺⣻⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⡦⡀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⡨⣺⣿⣿⣿⣿⣾⡻⡻⡛⡪⡫⡊⠊⣠⣺⣾⣿⣾⣿⣾⣾⣿⣿⣿⣻⣺⡺⡂⠀⡢⡊⡢⡺⡪⡊⡢⡂⡢⡢⡢⡪⡪⡊⡪⡊⡢⡂⡂⡪⣪⡪⣺⡢⡂⡀⡢⡢⡀⠀⡪⡂⡀⠈⣢⡂⡊⠂⡀⡈⡂⠂⡢⡂⡈⡊⡪⠚⡺⠚⡺⡺⣻⣿⣿⣿⣿⡿⡂⠂
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⠊⠊⠊⠋⠊⠊⠀⡀⡠⡢⣪⡢⡀⡀⣺⣿⣾⣿⣿⣿⣾⣿⣿⣻⣾⡺⠊⠊⡀⠀⣢⣪⣪⡪⡢⡢⡢⡂⣢⡂⡢⡪⣢⡊⡂⠂⡢⡢⡢⣪⣺⣾⣪⣺⣾⡂⡀⡺⡂⠀⡠⡂⡀⠀⡀⠂⡀⠀⡀⡀⡂⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠊⠊⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡪⣪⡺⣪⣺⣶⣺⣾⣻⣿⣿⣿⣿⣿⣿⡿⡋⠂⠀⠀⠀⠀⣺⣾⣻⣾⣪⣪⣺⣢⣺⣮⣪⣢⣺⣪⡢⡂⡢⣲⣪⣪⣺⣾⣻⣾⣺⣿⡂⡠⡺⡢⠂⠀⠀⠀⠂⡀⠀⠂⠂⠀⠂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡺⣪⣺⣾⣻⣾⣿⣿⣾⣿⣿⣾⣿⡾⠊⠀⠀⠀⠀⠀⠀⡠⡺⣪⣻⣾⣻⣾⣾⣺⣻⣾⣿⣾⣾⣺⡂⠀⣺⡪⣺⣪⣺⣺⣻⣮⣺⣿⣾⡢⡊⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⡺⣺⣺⣾⣿⣿⣿⣿⣿⣿⡿⡋⠊⠀⠀⠀⠀⠀⠀⠀⡠⡢⠪⣾⣿⣫⣺⣾⣺⣾⣿⣿⣿⣾⡪⡂⠀⣠⡊⡢⡺⣺⣺⣺⣿⣾⣿⣾⣻⡢⡂⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣺⣺⣾⣻⣿⣿⣿⣿⣿⡻⡋⠂⠀⠀⡀⠀⠀⠀⡀⠀⡀⡪⣢⣾⣿⣻⣺⣻⣿⣻⣿⣿⣿⣻⡪⠂⣠⡺⡪⠊⡀⠀⣪⣺⣾⣻⣿⣿⣿⣻⣮⡂⡀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⣾⣿⣾⣿⣿⣿⣿⡿⡋⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣪⡊⣺⣾⣾⣻⣾⣿⣿⣿⣮⡺⡂⡠⣾⡊⠀⠀⠀⠂⡪⣺⣺⣻⣿⣿⣿⣾⣾⡪⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣺⣿⣿⣿⣿⣾⡻⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣮⣿⣾⣾⣾⣿⣿⣿⡪⡂⡀⡺⣢⡀⡀⠀⠀⠀⡠⣺⣾⣿⣿⣿⣿⣿⣾⣺⡂⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣢⣻⣿⣿⣿⡻⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡨⣻⣾⣿⣿⣿⣾⣿⡢⣠⣢⡪⡪⠺⡂⠀⠀⠀⡀⠚⣺⣻⣿⣿⣿⣿⣾⣿⣦⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣪⡺⡪⡊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣺⣿⣿⣾⣻⣿⡋⡂⡊⡪⡢⡂⡀⡀⠂⡢⡀⡀⡀⡪⣻⣾⣿⣿⣿⣿⣿⣾⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡺⣺⡺⡂⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⡢⡺⣺⣿⣾⣻⡪⡂⠀⠂⠀⠀⡊⠂⠀⠀⠀⠀⡀⡀⡀⠺⣺⣿⣿⣿⣿⣿⣿⡂⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡺⣪⡊⡂⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⡊⠊⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⡀⠂⠀⠀⡊⠻⣻⣿⣿⣿⣿⡦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⣪⡺⡪⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠺⣻⣿⣿⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⡪⣺⡪⡪⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠊⡻⡛⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⡺⡪⡊⡂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+</code></pre>
+<h2 id="command-reference">8. Command reference</h2>
+<hr>
+<pre class="scroll-container"><code class="scroll-container">
+★-| Command                        | What it does.
+
+★-| `cd "/path/to/pecweb"`         | Go to the site folder. Quotes are needed if the path has spaces.
+★-| `pwd`                          | Print the folder you are in.
+★-| `ls`                           | List files (lowercase L).
+★-| `git status`                   | Show changed files and the branch. Add `-sb` for the short version.
+★-| `git diff`                     | Show line-by-line changes in files you have not staged. `q` leaves the viewer.
+★-| `git diff &lt;file&gt;`              | Same, for one file.
+★-| `git log --oneline -10`        | The last 10 commits, one line each.
+★-| `git fetch origin`             | Download GitHub's latest without changing your files.
+★-| `git pull`                     | Fetch and merge GitHub's latest into your folder. Always do this first.
+★-| `git add .`                    | Stage every change for the next commit (space, then dot).
+★-| `git add &lt;file&gt;`               | Stage one file.
+★-| `git commit -m "note"`         | Save a snapshot of what is staged, with a short note.
+★-| `git push`                     | Upload your commits to GitHub; this triggers the deploy.
+★-| `git restore &lt;file&gt;`           | Throw away your uncommitted edits to a file. Cannot be undone .
+★-| `git restore --staged &lt;file&gt;`  | Unstage a file; keeps your edits.
+★-| `git stash` / `git stash pop`  | Set your edits aside / bring them back.
+★-| `git reset --hard origin/main` | Make tracked files identical to GitHub. Destroys uncommitted edits.
+★-| `git ls-files`                 | List every tracked file.
+★-| `git remote -v`                | Show which GitHub repo this folder is connected to.
+★-| `git config --global --list`   | Show your saved Git settings.
+★-| `git clone &lt;url&gt;`              | Copy the repo onto a new computer.
+★-| `grep -rn "^&lt;&lt;&lt;&lt;&lt;&lt;&lt;..." .`     | Find leftover merge-conflict markers (see B3).
+★-| `python3 scripts/build_log.py` | Rebuild the log locally. Normally you never need it.
+</code></pre>
+<blockquote>
+<p>++++First-time setup on a computer</p>
+</blockquote>
+<pre class="scroll-container"><code class="scroll-container">
+git config --global user.name "your name"
+git config --global user.email "your-noreply-email"
+git config --global --add safe.directory "&lt;path to the folder&gt;"    # only for drives that do not record owners
+</code></pre>
+<blockquote>
+<p>♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬</p>
+</blockquote>
+<h2 id="troubleshooting">9. Troubleshooting</h2>
+<p>some common issues i’ve run into here n there and tips+remedies that have proved helpful,</p>
+	
+<pre class="scroll-container"><code class="scroll-container"> 
+★----------------------------------Symptom ----------------------&gt; Likely cause(s) ----------------------------&gt; Fix 
+
+★-|-`git pull` blocked: "local changes would be overwritten" -----&gt; You have uncommitted edits to a file GitHub also changed  ---------&gt; refer to B3* 
+★-|---------------------- `git push` rejected: "fetch first" -----&gt; GitHub has a newer commit (often the bot's)  ---------&gt; `git pull`, then `git push` 
+★-|------------------------An editor opens during `git pull` -----&gt; Git wants a merge message  ---------&gt; Save and close it 
+★-|-------------- `&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD` text on a page or in a file -----&gt; Merge-conflict markers were committed or left  ---------&gt; `grep` check in B3; fix; commit
+★-|-------Accents turn into `?` or odd symbols in Portuguese -----&gt; `js/lang-pt.js` saved in the wrong encoding  ---------&gt; `git restore js/lang-pt.js`, `git pull`; edit only in UTF-8
+★-|---------------------------------New note does not appear -----&gt; Wrong file name, empty note, or it was committed to another branch  ---------&gt; Check the name (`YYYY-MM-DD-slug.txt`), commit to `main`, read the build step in Actions.
+★-|---Yellow warning "Skipped '...': name must look like..." -----&gt; A file in `log-entries/` is not a dated note (for example `.gitkeep.txt`)  ---------&gt; Rename it, delete it, or ignore the warning.
+★-|--------------Red X on "Build log" but the site deployed  -----&gt; The build script failed; the deploy continues by design  ---------&gt; Open the run, read the error under Annotations.
+★-|--------------------------Red X on "Deploy to Neocities"  -----&gt; Secret missing or mistyped, or Neocities is down  ---------&gt; Check the run log; re-run with "Run workflow".
+★-|-----------------------Site looks unchanged after a push  -----&gt; Browser cache, or the run has not finished  ---------&gt; Wait for the green check; private tab or Ctrl+Shift+R .
+★-|---------Footer date did not change on a page you edited  -----&gt; The script only changes dates when the log changes  ---------&gt; Edit the footer date yourself.
+★-|----------------------------Local folder says "behind N"  -----&gt; GitHub has commits you do not (phone edits, bot commits) ---------&gt; `git pull`.
+</code></pre>
+<h2 id="rules-of-thumb-ദ്ദി˵-•̀-ᴗ---˵--✧">&gt; Rules of thumb <br>
+ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</h2>
+<pre class="scroll-container"><code class="scroll-container">	  
+<blockquote>
+<p>♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬</p>
+</blockquote>
+<p>★-|<strong>GitHub <code>main</code> is the master copy.</strong> Neocities and GitHub Pages are outputs.</p>
+<p>★-|<strong><code>git pull</code> before you edit,</strong> every session, and after any phone or GitHub edit.</p>
+<p>★-|<strong>Never edit deployed files on Neocities.</strong></p>
+<p>★-|<strong>Do not hand-edit between the LOG markers</strong> in <code>sitemap.html</code> and <code>js/lang-pt.js</code>.<br>
+Edit notes in <code>log-entries/</code> instead.</p>
+<p>★-|<strong>UTF-8 only</strong> for every file, especially <code>js/lang-pt.js</code>.</p>
+<p>★-|<strong>After a push, look at the Actions tab</strong> before assuming Neocities has updated.⚞^. .^⚟</p>
+<p>★-|<strong>⤷The repo is public.</strong> Anything committed, including notes, can be read by anyone.<br>
+Keep drafts outside the repo until you want them live゛ˎˊ˗</p></code></pre>
+<pre class="scroll-container"><code class="scroll-container">
+-------------------------------------------------------------------------
+&gt;!++++++++++++++++++++++++++++!+IMPORTANT+!++++++++++++++++++++++++++++!&lt;
+&gt;Never put tokens, passwords, or sensitive documents your main branch!!!!**&lt;+   
+    ++&gt;The Neocities key should live only in GitHub's encrypted secrets&lt;++     
+ &gt;!++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++!&lt;
+-------------------------------------------------------------------------
+</code></pre>
+<h2 id="purasintonia𝄞⨾-pratacera…-978..★⋆𝄞⋆♡☆·ﾟ">PURASINTONIA++𝄞⨾ Prata+Cera… 978…★⋆𝄞⋆♡☆*:·ﾟ</h2>
+<pre class="scroll-container"><code class="scroll-container">
+                              JLJHFH                                                                 
+                            OONLJJJJH                                                              
+                            ONLLJLJJJHH                                            JJ              
+                           QLJLLLNNLLLJHF                                       JOONJH             
+                          JNLLLNNONNNNLLLH        LNLOJ LNOJH               FNOQQQLLHHF            
+                          NNNNNNNOOONLLLLJF H LFJNNLJNJNNNBD              HNNNOOOLLJHHF            
+                         JONNNLNNNONNNNHHNNOOLLJNLJLNJLFJFNFJL           NONNNNNNLLJHHF            
+                          LQONNLNHFFLOONNLLJHLLHBHHHJJDHDLLHONJNQNDL    ONNNNNOONLJJJHF            
+                           OSONLJFFLHLQNHNLHOHNJHJJJLLLLJHJJNHHFFNLJH  ONNNNNOQQNLJJJHH            
+                            QQONFFFJLLNLFJHHJHDDADHFJHHLLJJHFFDJNHLNJJONNNOOOQOOLJJJHJJ            
+                            FQQLFFFHLNHFJJHJFJDHDBFJHLHLHFJJHHHDFFLLOOOOOQQQSONLLJJJJJ             
+                             JLLFFJLNLJJJHJHFJHFHDDLHLJJNJLHJLHDBJFNOOOOOOOONNNLJJJJL              
+                             JLLLFHFLHHJHHFFFFFBFFFJHHJFJHFHHJLJFHHQNJOOOOOONNLLLLLN               
+             FFJF           NFFOFDNFHFHHHHJLHLLJUUWWWULFJHFHHHHHDLHFQOQOOOONNNLLLNOH               
+             HOOSQQNOL      ODFJLNNONFDHNHFFFDFJSWYWWOHHLJOLJFFFHLDFQLOOOONNNLLNNNF                
+             JNOQSUUUSSQNN  NDHLONOHHLLLFFFJJDFFFHUWJHFDHHFHLQJDJOFHJLLQONNLLLLNN                  
+             JOOOOQUUUUSSOHFDHJJNNOLHLFJHJQLNDQLQFNUONJOOJJHFDHONLJNLLJQOLLLLNNL                   
+              NONQQQQQQSQQLFFHJFLFFLHFHLFHQUSHLJNHHQOOLHHQFJJHLJLJLFOLFOOLLLLNJ                    
+                NLOQSSQQQQNFFFJFLDFJHOLNHHQUSQQOLOLNJJONNNONNLNJHJOLOLLLLJLLNJ                     
+                 HNQQQQQQOOJFFHJJHLFHLLLNNNQSOLNLNOOOOOOOSONLLONJFJJNDLJLLNN             J         
+  DHFD            JNLNNOQOOOHFHHHJJJJFFSOLHLOOJDFOSSQONLLLQNNNNNONLJHHJNNOL            OOONJL      
+FLFJLLLJJHHFHF   JNNA LLLNOOOHFFFJFHNNOLSNHLFNLHJNQSQNFNLNNJLQQNNQNJHFJLJFHJHHHJJJNNNOOOSSQNQ      
+JLLFJJLNNNNNLLLLLLLLJJJJJJJLJNNJDDHFHLNNNLLFFFNLNLHNLFJJONLNNLJFLJJHJJLNNNNNNNNOSQABBONNQSSQOO      
+LONJJJLNONNNNNNNLLNLLLLLLJJJHHFFDJLFHLJJNHHLLHFJNNFDFJONHFDLHJFJDHHDHLNNNNNOOOONNNNNNQQQQOOO       
+  JNLJLLLLNNOOONNNNNNNLLLLLLJJJLJHHHFJHFHJFHHJHHLJJHJJHHHFFJFHFHDHNLNNNNNOONNNNOONOOQSQONQN        
+    LLJHJJJJNOOONNNNNNNLLLLLLLNOOONLHFFFFFFJJFHHJJFHFHJHHFDJHFDHHLSSSQQQSQNNNNOOOONNOLLQQ          
+     HLNHHHHHHJJLLNLLLLLLLLLLNNOQSSOLFFDDFHFHFHHJLFHFFHHHJDFHFDHNSUUSQQOONOOOOOOOOQLNQN            
+        DHFHHHHHHHJJJJJLLLNNNNOOQSUUQNFFFDFHFFFFHJFFFHJHFDFFJHJNQQOOOOJHFHHHJHHHJLNF               
+            FHHJJLLLLLLJLNNNOOQQQOSUSQNLJFHHFHFHHJFHDNHHJJHFLNOQQQOOLJHHJJJJJJLLLLLLLJJFDD  DFFHJ  
+                   BDFJLLNLNNOOOONOOQSQONLLLJLLHJLHLLJFHJHHNOQSSSSQQOLLJJLLLLLJLLLLLLJJLLJJLJJJJHH 
+                      NNONLNLLLLLLNOQSSSSQOOOQOOOOOOONLNLNOSSSSSQOOONNNLJJJJJJLLJLJJJJJJJJJJJJLLLNN
+                    NOONOQQOQQOLLNNLOSSSQQOOQQQQQSSQQSQSSSQSQNLJJNJJJJJLJJJJJJJJJJJJJJJJJJFJOSSSSSN
+                  JNOOOONOOQOOOOQQNLHJJJHJNNNOOQQQSSSSSSSSSOJHHFFDFFFHHHHHHHHHHHJJJJHHHFFJOQQQQQOJ 
+                  JLOOOOOOONOOQQQLHFJLJJJJHHJLLLLLJJJJNNNLLQQJHHLJDDLNFFFHFFFFFFFFFFFFFJNOOQQQOL   
+                    HOOOOOQOQQQOJFFJLNOONLHHHJHHHHFFHHHJJJJOOONJHDDHLN     FHHJJHHHHHHD            
+                       NOONNNNLFFFFJNSUSQQOLLHHFFHHFDJONLLJJJJHHJONLL                              
+                          LNNNNNLFHNSUUUSQQONNFFHHHF  FJNNLLONNQOOONL                              
+                                  HNSSSSSSQONNFFFFD     HLLNLLLNNOONND                             
+                                  HHNOQQQQNLLLJHFB        JJNNLLLNNLJ                              
+                                   HJLLLLJF                 HJJJJOOJ 
+</code></pre>
+<pre class="scroll-container"><code class="scroll-container">★
+                          @@@@@@@@@@@@@@@@@@@                                                                                                                                                  
+                    @@@@@                     @@@@@                                                                                                                                            
+                 @@@@       ----------------      @@@@                                                                                                                                         
+              @@@      -------------------------      @@@                                                                                                                                      
+            @@@    ---------------------------------    @@@                                                                                                                                    
+          @@@    -----------------              ------    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@                  
+        @@@    --------------                        ---                                                                                                                    @@@@@@@            
+       @@    ------------                                -                                                                                                                         @@@         
+     @@    ------------                                                                                                                                                               @@       
+    @@    -----------           @@@@@@@@@@@@@@@@@@                                                                                                                                      @@     
+   @@   -----------          @@@@@@@@@@@@@@@@@@@@@@@@          @@ @@@@@ @@@@@ @@@@@ @@@@@  @@ @@  @@@@@@                                                                                 @@@   
+  @@   -----------         @@@@@@@@@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@@@@@  @@@@  @@@@  @@ @@  @@  @@                                                                                   @@  
+  @@  -----------        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@   @@@ @@ @@@@@ @@@@@ @@@@@  @@  @@@@@@   @@@@@@                                                                           @@ 
+ @@   ----------        @@@@@@@@@@@            @@@@@@@@@@@                                               @@@@ @@@@                                                                          @@@
+@@@  ----------         @@@@@@@@@                @@@@@@@@@@                                                                                                                                  @@
+@@   ----------        @@@@@@@@@                  @@@@@@@@@    @@@@@@@@@@@@@@        @@@@@@@@@@@           @@@@@         @@@@@      @@@@    @@@@@     @@@@@@@@@@@        @@@@@@@@@@@          @
+@    ---------        @@@@@@@@@                    @@@@@@@@@   @@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@        @@@@@@@        @@@@@@     @@@@    @@@@@   @@@@@@@@@@@@@@     @@@@@@@@@@@@@@@        @
+@   ----------        @@@@@@@@@                    @@@@@@@@@   @@@@@      @@@@@   @@@@@       @@@@@      @@@@@@@@@       @@@@@@@    @@@@    @@@@@  @@@@@      @@@@@   @@@@@       @@@@@       @
+@   ----------        @@@@@@@@@                    @@@@@@@@@   @@@@@      @@@@@   @@@@                   @@@@ @@@@@      @@@@@@@@   @@@@    @@@@@  @@@@              @@@@@         @@@@@      @
+@   ----------        @@@@@@@@@                    @@@@@@@@@   @@@@@@@@@@@@@@@   @@@@@                  @@@@@ @@@@@      @@@@@@@@@  @@@@    @@@@@  @@@@              @@@@@         @@@@@      @
+@    ---------        @@@@@@@@@                    @@@@@@@@@   @@@@@@@@@@@@@     @@@@@     @@@@@@@@    @@@@@   @@@@@     @@@@ @@@@@@@@@@    @@@@@  @@@@              @@@@@         @@@@@      @
+@    ---------        @@@@@@@@@                    @@@@@@@@@   @@@@@  @@@@@@      @@@@     @@@@@@@@    @@@@@@@@@@@@@@    @@@@   @@@@@@@@    @@@@@  @@@@        @@@   @@@@@         @@@@@      @
+@@    ---------       @@@@@@@@@                    @@@@@@@@@   @@@@@    @@@@@@    @@@@@        @@@@   @@@@@@@@@@@@@@@@   @@@@    @@@@@@@    @@@@@  @@@@@      @@@@@   @@@@@       @@@@@       @
+@@@   ---------        @@@@@@@@@                  @@@@@@@@@    @@@@@     @@@@@@    @@@@@@@ @@@@@@@@  @@@@@       @@@@@   @@@@     @@@@@@    @@@@@   @@@@@@@@@@@@@@     @@@@@@@ @@@@@@@        @
+ @@    ---------       @@@@@@@@@@                @@@@@@@@@@    @@@@@      @@@@@@     @@@@@@@@@@@@@   @@@@         @@@@@  @@@@      @@@@@    @@@@@     @@@@@@@@@@@        @@@@@@@@@@@@         @
+  @@    ---------       @@@@@@@@@@@            @@@@@@@@@@@                                                                                                                                    @
+  @@     ---------       @@@@@@@@@@@@@      @@@@@@@@@@@                                                                                                                                       @
+   @@     ---------       @@@@@@@@@@@@@@@@@@@@@      ---------------------------                                                                                                              @
+    @@      ---------       @@@@@@@@@@@@@@     ---------------------------------------                                    @@@@@@@@@@  @@@@@@@@@@      @@@@     @@@@@@@@  @@@@ @@@@            @
+     @@       ---------        @@@@@@@    -------------------------------------------------                               @@@@   @@@@ @@@@   @@@@    @@@@@    @@@@  @@@@ @@@@ @@@@            @
+       @@       ---------              --------------------------------------------------------                           @@@@  @@@@  @@@@   @@@@   @@@@@@@    @@@@@     @@@@ @@@@            @
+        @@        ----------        ----------------                    ---------------------------                       @@@@@@@@@@  @@@@@@@@@@   @@@@  @@@    @@@@@@@@ @@@@ @@@@            @
+          @@         -------     -----------          ---------------          ------------------------         --        @@@@    @@@ @@@@ @@@@    @@@@@@@@@@ @@@    @@@@@@@@ @@@@            @
+            @@@          -    -------         -------------------------------       ----------------------------          @@@@@@@@@@@ @@@@   @@@@ @@@     @@@ @@@@@@@@@@ @@@@ @@@@@@@@@       @
+              @@@           ---          -----------------------------------------:    ------------------------           @@@@@@@@@@  @@@@    @@@@@@@     @@@@ @@@@@@@@  @@@@ @@@@@@@@@@      @
+               @@        ------     ---------------------------------------------------   --------------------                                                                               @@
+             @@        --------------------------------------------------------------------------------------                                                                               @@ 
+           @@@       -----      ---------------------------------------------------------------------------                                                                              @@@@  
+          @@       ----           -----------------------------------------------------------------------      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     
+         @@       ---      @@@       ------------------------------------------------------------------       @@                                                                               
+          @@      --     @@@  @@        ------------------------------------------------------------        @@                                                                                 
+           @@           @@     @@@         ------------------------------------------------------         @@                                                                                   
+            @@@       @@         @@@@         ------------------------------------------------         @@@                                                                                     
+              @@@@@@@@              @@@@           --------------------------------------           @@@@                                                                                       
+                                       @@@@             ---------------------------              @@@@                                                                                          
+                                           @@@@@                                            @@@@@                                                                                              
+                                                @@@@@@@                              @@@@@@@                                                                                                   
+                                                        @@@@@@@@@@@@@@@@@@@@@@@@@@@@                                                                                                           
+★
+
+ </code> </pre> </section> </main>  </body>
+
+
+</html>
