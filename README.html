@@ -100,7 +100,7 @@
 </code></pre>
 <p>♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♪<br><br>
 This sheet explains<br>
-*how the <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">repo</a>, <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> &amp;<br>
+*how the <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a>, <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>, <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> &amp;<br>
 the local <code>pecweb</code> folder fit together,<br>
 *what each script does,<br>
 *what to do for each way of making a change.<br>
@@ -120,18 +120,18 @@ cover the 2 main routes we use⋆.☽˚~`,</p>
 <p>♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬ ｡･:<em>:･ﾟ✧･ﾟ:</em>:･｡ ♬</p>
 <h2 id="where-things-stand-right-now">0. Where things stand right now</h2><br>
 <ul>
-<li>The <strong>GitHub repo (<code>main</code>) is the main version.</strong><br>
-Neocities serves as it’s mirror domain,<br>
+<li>The <strong>GitHub <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a> (<code>main</code>) is the main version.</strong><br>
+<a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> serves as it’s mirror domain,<br>
 therefore the two are always synonymous.</li>
 </ul>
 <ul>
 <li>**local/ <code>pecweb</code> is the phsyical SSD root source, which also mirrors.</li>
-<li>Nothing flows from Neocities back to GitHub. Neocities is an output, not a source.</li>
+<li>Nothing flows from <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> back to the <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a>. <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> is an output, not a source.</li>
 </ul>
 <p>Keep in mind:</p>
 <blockquote>
-<p>GitHub <code>main</code> is the master copy. Your PC holds a working copy you edit and push.<br>
-Neocities and GitHub Pages are published copies.</p>
+<p><a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub</a> <code>main</code> is the master copy. Your PC holds a working copy you edit and push.<br>
+<a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a> and <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> are published copies.</p>
 </blockquote>
 <h2 id="architecture">1. architecture</h2>
 	  <div class="container-fluid">
@@ -141,14 +141,14 @@ Neocities and GitHub Pages are published copies.</p>
 
 
   phone / browser                      +-----------------------------+
-  (edit on github.com)  ------------&gt;  |   GITHUB REPO  (branch main)|  &lt;---- git push ----  local pecweb
+  (edit on <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com</a>)  ------------&gt;  |   GITHUB <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a>  (branch main)|  &lt;---- git push ----  local pecweb
                                        |   the master copy           |
-                                       |                             |  ----- git pull ---&gt;  (Git Bash)
+                                       |                             |  ----- git pull ---&gt;  (<a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git Bash</a>)
                                        +--------+-------------+------+  
                                                 |             |
                               (automatic)       |             |  (on every push to main)
                                                 v             v
-                                        GitHub Pages     GitHub Action
+                                        <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>     GitHub Action
                                         github.io        neocities.yml
                                         mirror                |
                                                               |  1. build the log (scripts/build_log.py)
@@ -156,7 +156,7 @@ Neocities and GitHub Pages are published copies.</p>
                                                               |  3. copy site files into dist/
                                                               |  4. upload dist/ to Neocities
                                                               v
-                                                         Neocities  -&gt;  your domain
+                                                         <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>  -&gt;  your domain
 
 ++++++ S3 bucket (images, audio, textures) is not in the repo; every page links to it by address.+++++++++
 
@@ -172,16 +172,16 @@ from ur local directory, and not into the local directory (see section 4).</p><b
 <pre class="scroll-container"><code class="scroll-container">
 ★-| Piece                                        | Runs where                     | Starts when                                      | What it does.
 
-★-| Git + Git Bash                               | your PC                        | you type a command                               | Tracks changes; sends them to GitHub and fetches them back.
-★-| GitHub repo                                  | github.com                     | --------                                         | Stores every file and the full history.
-★-| GitHub Pages                                 | GitHub                         | `main` changes                                   | Publishes the repo's top folder at the github.io address.
+★-| Git + <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git Bash</a>                               | your PC                        | you type a command                               | Tracks changes; sends them to GitHub and fetches them back.
+★-| GitHub <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a>                                  | github.com                     | --------                                         | Stores every file and the full history.
+★-| <a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>                                 | GitHub                         | `main` changes                                   | Publishes the repo's top folder at the github.io address.
 ★-| Workflow `.github/workflows/neocities.yml`   | GitHub's servers               | any push to `main`, or the "Run workflow" button | Builds the log, commits it back, deploys to Neocities.
 ★-| `scripts/build_log.py`                       | inside the workflow (Python 3) | step 1 of the workflow                           | Rebuilds the log from `log-entries/`.                     
 ★-| `js/site.js`, `js/lang-pt.js`, `js/hit.js`   | the visitor's browser          | page load                                        | Theme and language buttons, Portuguese text, click areas. Not part of any pipeline.
 </code ></pre>
 <h3 id="what-the-workflow-does-step-by-step">What the workflow does, step by step</h3>
 <ol>
-<li><strong>Checkout.</strong> Gets the repo’s files.</li>
+<li><strong>Checkout.</strong> Gets the <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo's</a> files.</li>
 <li><strong>Build log</strong> (<code>python3 scripts/build_log.py</code>, marked <code>continue-on-error</code>).
 <ul>
 <li>Reads every <code>.md</code> / <code>.txt</code> note in <code>log-entries/</code>, newest first.</li>
@@ -201,7 +201,7 @@ another run, which is why the deploy happens in the same run.</li>
 <code>masks/</code>, and <code>robots.txt</code> if it exists.</li>
 <li><strong>Deploy to Neocities</strong> with the stored secret <code>NEOCITIES_API_TOKEN</code>, <code>cleanup: false</code>.</li><br>
 </ol>
-<h3 id="what-is-not-deployed-to-neocities">What is not deployed to Neocities</h3>
+<h3 id="what-is-not-deployed-to-neocities">What is not deployed to <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a></h3>
 <p><code>scripts/</code>, <code>log-entries/</code>, <code>.github/</code>, <code>.gitignore</code>, <code>list of git commands.txt</code>,<br>
 <code>images/</code>, the unused Bootstrap files, and this sheet.</p><br>
 	  
@@ -320,7 +320,7 @@ warning (this includes <code>.gitkeep.txt</code>).</li>
 <h2 id="route-a---commit-directly-on-github-website-or-phone">4. Route A - commit directly on GitHub (website or phone)</h2>
 <h3 id="a1.-add-edit-or-delete-a-log-note">A1. Add, edit or delete a log note</h3>
 <ol>
-<li>On the repo page open <code>log-entries/</code> (type <code>log-entries/</code> in the file name when creating<br>
+<li>On the <a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">repo</a>  page open <code>log-entries/</code> (type <code>log-entries/</code> in the file name when creating<br>
 a file if the folder is gone; GitHub creates it).</li>
 <li>Create a new file named like <code>2026-10-19-my-note.txt</code>, or open an existing one.</li>
 <li>Write the note in the format above.</li>
@@ -332,8 +332,8 @@ a file if the folder is gone; GitHub creates it).</li>
 <li>The build script rewrites the log in <code>sitemap.html</code> and <code>js/lang-pt.js</code>, and sets every<br>
 page’s footer date.</li>
 <li>The bot commits those files back to <code>main</code>.</li>
-<li>The site files are uploaded to Neocities.</li>
-<li>GitHub Pages republishes <code>main</code>.</li>
+<li>The site files are uploaded to <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a>.</li>
+<li><a href="https://sixaelsixaelsixael.github.io/prataecera/" target="_blank" rel="noopener noreferrer">GitHub Pages</a> republishes <code>main</code>.</li>
 </ol>
 <p>To delete an entry, delete the note file and commit. The log rebuilds without it.</p>
 <h3 id="a2.-edit-any-other-file-on-github">A2. Edit any other file on GitHub</h3>
