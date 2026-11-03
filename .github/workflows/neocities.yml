@@ -47,7 +47,7 @@ jobs:
       - name: Collect site files
         run: |
           mkdir -p dist/css dist/js
-          cp index.html sitemap.html wiki.html dist/
+          cp index.html sitemap.html wiki.html README.html dist/
           cp css/style.css dist/css/
           cp js/site.js js/hit.js js/lang-pt.js dist/js/
           cp -r sonoro dist/
