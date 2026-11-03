@@ -164,8 +164,8 @@ therefore the two are always synonymous.</li>
 </code></pre>
 <blockquote>
 <p>All arrows point one way.<br>
-The only arrow that flows to the repo is the bot’s commit in step 2, that pushes to the GitHub repo (branch main)<br>
-from ur local directory, and not into the local directory (see section 4).</p><br>
+The only arrow that flows to the repo is the bot’s commit in step 2, that pushes to the<a href="https://github.com/sixaelsixaelsixael/prataecera" target="_blank" rel="noopener noreferrer">GitHub repo</a> (main branch)<br>
+from ur local directory, and not <em>into</em> the local directory (see section 4).</p><br>
 	
 </blockquote>
 <h2 id="the-pieces">2. The pieces</h2>
@@ -197,9 +197,9 @@ commits as <code>github-actions[bot]</code> with the message <code>Rebuild log f
 runs <code>git pull --rebase</code>, and pushes to <code>main</code>. A commit made this way does not start<br>
 another run, which is why the deploy happens in the same run.</li>
 <li><strong>Collect site files</strong> into a temporary <code>dist/</code> folder: <code>index.html</code>, <code>sitemap.html</code>,<br>
-<code>wiki.html</code>, <code>css/style.css</code>, <code>js/site.js</code>, <code>js/hit.js</code>, <code>js/lang-pt.js</code>, <code>sonoro/</code>,<br>
+<code>wiki.html</code>, <code>README.html</code>, <code>css/style.css</code>, <code>js/site.js</code>, <code>js/hit.js</code>, <code>js/lang-pt.js</code>, <code>sonoro/</code>,<br>
 <code>masks/</code>, and <code>robots.txt</code> if it exists.</li>
-<li><strong>Deploy to Neocities</strong> with the stored secret <code>NEOCITIES_API_TOKEN</code>, <code>cleanup: false</code>.</li><br>
+<li><strong>Deploy to <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a></strong> with the stored secret <code>NEOCITIES_API_TOKEN</code>, <code>cleanup: false</code>.</li><br>
 </ol>
 <h3 id="what-is-not-deployed-to-neocities">What is not deployed to <a href="https://neocities.org/site/prataecera" target="_blank" rel="noopener noreferrer">Neocities</a></h3>
 <p><code>scripts/</code>, <code>log-entries/</code>, <code>.github/</code>, <code>.gitignore</code>, <code>list of git commands.txt</code>,<br>
